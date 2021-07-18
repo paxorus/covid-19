@@ -1,0 +1,12 @@
+{
+  "name": "covid-19",
+  "version": "1.0.0",
+  "description": "Covid-19 Mortality Rate Analysis",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}
