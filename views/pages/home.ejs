@@ -1,0 +1,63 @@
+<canvas id="myChart" width="400" height="400"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.1/dist/chart.min.js" integrity="sha256-GMN9UIJeUeOsn/Uq4xDheGItEeSpI5Hcfp/63GclDZk=" crossorigin="anonymous"></script>
+
+<script>
+const covidMortalityData = <%- JSON.stringify(data) %>
+	.map(row => ({
+		x: row.pop_density,
+		y: row.covid_deaths / row.total_pop * 100000,
+		...row
+	}))
+	// .filter(row => row.x < 1500 && row.y < 500),
+	.filter(row => row.y < 500);
+	
+const data = {
+	datasets: [{
+		label: "Scatter Dataset",
+		data: covidMortalityData,
+		backgroundColor: "rgb(255, 99, 132)"
+	}],
+};
+
+const config = {
+	type: "scatter",
+	data: data,
+	options: {
+		scales: {
+			x: {
+				title: {
+					display: true,
+					text: "Population Density (people per square mile)"
+				},
+				type: "logarithmic",
+				position: "bottom"
+			},
+			y: {
+				title: {
+					display: true,
+					text: "Mortality Rate (deaths per 100K)"
+				}
+			}
+		},
+		plugins: {
+			title: {
+				display: true,
+				text: "Covid-19 Mortality Rate over Population Density by County"
+			},
+			tooltip: {
+				callbacks: {
+					label: (context) => [
+						`${context.raw.county} (${context.raw.state})`,
+						`${Math.round(context.raw.pop_density)} people per sq mi`,
+						`${Math.round(context.parsed.y)} deaths / 100K`			
+					].join("\n")
+				}
+			}
+		}
+	}
+};
+
+const ctx = document.getElementById("myChart").getContext("2d");
+const myChart = new Chart(ctx, config);
+</script>
