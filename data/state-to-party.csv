@@ -9,7 +9,7 @@ AR,R
 NJ,D
 CA,D
 NM,D
-CO,R
+CO,D
 NY,D
 CT,D
 NC,R
@@ -43,12 +43,12 @@ MD,D
 VA,D
 MA,D
 VI,-
-MI,D
+MI,S
 WA,D
-MN,R
+MN,D
 WV,R
 MS,R
-WI,D
+WI,S
 MO,R
 WY,R
 MT,R
