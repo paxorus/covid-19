@@ -14,9 +14,17 @@ const covidMortalityData = <%- JSON.stringify(data) %>
 	
 const data = {
 	datasets: [{
-		label: "Scatter Dataset",
-		data: covidMortalityData,
+		label: "Republican States",
+		data: covidMortalityData.filter(row => row.party === "R"),
 		backgroundColor: "rgb(255, 99, 132)"
+	}, {
+		label: "Democratic States",
+		data: covidMortalityData.filter(row => row.party === "D"),
+		backgroundColor: "rgb(99, 132, 255)"
+	}, {
+		label: "Swing States",
+		data: covidMortalityData.filter(row => row.party === "S"),
+		backgroundColor: "rgb(132, 99, 255)"
 	}],
 };
 
@@ -24,6 +32,11 @@ const config = {
 	type: "scatter",
 	data: data,
 	options: {
+		elements: {
+			point: {
+				backgroundColor: "rgb(255, 99, 132)"
+			}
+		},
 		scales: {
 			x: {
 				title: {

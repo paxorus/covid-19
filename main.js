@@ -17,12 +17,15 @@ const covidDeathsByCounty = readCsv("data/Provisional_COVID-19_Death_Counts_in_t
 		fips_code: parseInt(row["FIPS County Code"], 10),
 		county: row["County name"],
 		state_code: row["State"],
-		covid_deaths: parseInt(row["Deaths involving COVID-19"], 10) || 0
+		covid_deaths: row["Deaths involving COVID-19"].replace(",", "")
 	}));
 
 covidDeathsByCounty.writeCsv("data/covid-deaths-by-county.csv");
 
+const stateToParty = readCsv("data/state-to-party.csv");
+
 const mortalityRateAndPopDensityByCounty = populationByCounty
-	.innerJoin(covidDeathsByCounty, ["fips_code"], ["fips_code"]);
+	.innerJoin(covidDeathsByCounty, ["fips_code"], ["fips_code"])
+	.innerJoin(stateToParty, ["state_code"], ["state_code"]);
 
 mortalityRateAndPopDensityByCounty.writeCsv("data/boop.csv");
