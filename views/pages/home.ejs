@@ -10,8 +10,8 @@ const covidMortalityData = <%- JSON.stringify(data) %>
 		...row
 	}))
 	// .filter(row => row.x < 1500 && row.y < 500),
-	.filter(row => row.y < 500);
-	
+	.filter(row => row.y < 1000);
+
 const data = {
 	datasets: [{
 		label: "Republican States",
@@ -57,7 +57,7 @@ const config = {
 		plugins: {
 			title: {
 				display: true,
-				text: "Covid-19 Mortality County Rate over Population Density"
+				text: "Covid-19 County Mortality Rate over Population Density"
 			},
 			tooltip: {
 				callbacks: {

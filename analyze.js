@@ -1,5 +1,5 @@
-require("./array-monkey-patch.js");
-const {readCsv} = require("./csv-io.js");
+require("./js/array-monkey-patch.js");
+const {readCsv} = require("./js/csv-io.js");
 
 const populationByCounty = readCsv("data/input/Average_Household_Size_and_Population_Density_-_County.csv")
 	.map(({GEOID, NAME, State, B01001_001E, B01001_calc_PopDensity}) => ({
@@ -29,3 +29,4 @@ const mortalityRateAndPopDensityByCounty = populationByCounty
 	.innerJoin(stateToParty, ["state_code"], ["state_code"]);
 
 mortalityRateAndPopDensityByCounty.writeCsv("data/output/mortality-vs-pop-density.csv");
+
