@@ -54,6 +54,3 @@ const countyStatsByParty = mortalityRateAndPopDensityByCounty
 	}))
 	.writeJson("data/output/mortality-vs-pop-density-trendlines.json");
 console.log("Wrote data/output/mortality-vs-pop-density-trendlines.json");
-
-// console.log(movingAverage([{a: "CA", b: 50, c: 20}, {a: "MA", b: 10, c: 21}, {a: "NY", b: 20, c: 19}], "b", "c", 20, 10));
-// console.log(movingAverage([{a: "CA", b: 50, c: 20}, {a: "MA", b: 10, c: 21}, {a: "NY", b: 20, c: 19}], "b", "c", 20, 20));

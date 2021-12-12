@@ -16,16 +16,19 @@ function movingAverage({data, x, y, windowWidth, stepWidth, logarithmic}) {
 	const xMin = data[0][x];
 	const xMax = data[data.length - 1][x];
 
-	const dataWindow = new SlidingWindow(data, x, xMin, windowWidth, step, windowRight);
+	const slidingWindow = new SlidingWindow(data, x, xMin, windowWidth, step, windowRight);
 	const output = [];
 
 	for (let windowLeft = xMin; windowRight(windowLeft) <= xMax; windowLeft = step(windowLeft)) {
-		dataWindow.slideTo(windowLeft);
-		const yAverage = dataWindow.get().average(row => row[y]);
+		slidingWindow.slideTo(windowLeft);
+		const dataWindow = slidingWindow.get();
+		const yAverage = dataWindow.average(row => row[y]);
 		const xCenter = windowCenter(windowLeft);
 		output.push({
 			[x]: xCenter,
-			[y]: yAverage
+			[y]: yAverage,
+			[x + "_window"]: [windowLeft, windowRight(windowLeft)],
+			n: dataWindow.length
 		});
 	}
 

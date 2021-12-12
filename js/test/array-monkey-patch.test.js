@@ -4,7 +4,7 @@ require("../array-monkey-patch.js");
 describe("Array Monkey Patch module", () => {
     describe("#groupBy()", () => {
         it("groups by state", () => {
-            const input = [{a: "MA", b: 10}, {a: "MA", b: 50}, {a: "NY", b: 20}]
+            const input = [{a: "MA", b: 10}, {a: "MA", b: 50}, {a: "NY", b: 20}];
             const actual = input.groupBy(row => row.a);
 
             const expected =  [
