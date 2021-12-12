@@ -1,7 +1,8 @@
 const express = require("express");
 const http = require("http");
 
-const {readCsv} = require("./csv-io.js");
+const {readCsv} = require("./js/csv-io.js");
+const Fs = require('fs');
 
 const app = express();
 const server = http.createServer(app);
@@ -13,7 +14,8 @@ app.set("view engine", "ejs");
 
 app.get("/", function(req, res) {
 	const data = readCsv("data/output/mortality-vs-pop-density.csv");
-	res.render("pages/home", {data});
+	const movingAverages = JSON.parse(Fs.readFileSync("data/output/mortality-vs-pop-density-trendlines.json"));
+	res.render("pages/home", {data, movingAverages});
 });
 
 server.listen(app.get("port"), function() {

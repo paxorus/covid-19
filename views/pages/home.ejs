@@ -6,38 +6,84 @@
 const covidMortalityData = <%- JSON.stringify(data) %>
 	.map(row => ({
 		x: row.pop_density,
-		y: row.covid_deaths / row.total_pop * 100000,
+		y: row.covid_deaths / row.total_pop * 100_000,
 		...row
 	}))
-	// .filter(row => row.x < 1500 && row.y < 500),
+	// .filter(row => row.x < 50 && row.y < 500);
 	.filter(row => row.y < 1000);
+
+const movingAveragesData = <%- JSON.stringify(movingAverages) %>
+
+// console.log(movingAveragesData);
 
 const data = {
 	datasets: [{
+		type: "line",
+		label: "Republican States (average)",
+		data: movingAveragesData.find(row => row.party === "R").movingAverage
+			// .filter(row => row.pop_density < 50)
+			.map(row => ([row.pop_density, row.mortality_rate])),
+		elements: {
+			point: {
+				radius: 0
+			},
+			line: {
+				borderColor: "rgb(255, 99, 132)",
+				borderWidth: 5
+			}
+		}
+	}, {
+		type: "line",
+		label: "Democratic States (average)",
+		data: movingAveragesData.find(row => row.party === "D").movingAverage
+			// .filter(row => row.pop_density < 50)
+			.map(row => ([row.pop_density, row.mortality_rate])),
+		elements: {
+			point: {
+				radius: 0
+			},
+			line: {
+				borderColor: "rgb(99, 132, 255)",
+				borderWidth: 5
+			}
+		}
+	}, {
+		type: "line",
+		label: "Swing States (average)",
+		data: movingAveragesData.find(row => row.party === "S").movingAverage
+			// .filter(row => row.pop_density < 50)
+			.map(row => ([row.pop_density, row.mortality_rate])),
+		elements: {
+			point: {
+				radius: 0
+			},
+			line: {
+				borderColor: "rgb(132, 99, 255)",
+				borderWidth: 5
+			}
+		}
+	}, {
+		type: "scatter",
 		label: "Republican States",
 		data: covidMortalityData.filter(row => row.party === "R"),
-		backgroundColor: "rgb(255, 99, 132)"
+		backgroundColor: "rgba(255, 99, 132, 0.5)"
 	}, {
+		type: "scatter",
 		label: "Democratic States",
 		data: covidMortalityData.filter(row => row.party === "D"),
-		backgroundColor: "rgb(99, 132, 255)"
+		backgroundColor: "rgba(99, 132, 255, 0.5)"
 	}, {
+		type: "scatter",
 		label: "Swing States",
 		data: covidMortalityData.filter(row => row.party === "S"),
-		backgroundColor: "rgb(132, 99, 255)"
-	}],
+		backgroundColor: "rgba(132, 99, 255, 0.5)"
+	}]
 };
 
 const config = {
-	type: "scatter",
 	data: data,
 	options: {
 		responsive: true,
-		elements: {
-			point: {
-				backgroundColor: "rgb(255, 99, 132)"
-			}
-		},
 		scales: {
 			x: {
 				title: {
@@ -45,6 +91,7 @@ const config = {
 					text: "Population Density (people per square mile)"
 				},
 				type: "logarithmic",
+				// type: "linear",
 				position: "bottom"
 			},
 			y: {

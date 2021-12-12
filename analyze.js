@@ -1,5 +1,6 @@
 require("./js/array-monkey-patch.js");
 const {readCsv} = require("./js/csv-io.js");
+const {movingAverage} = require("./js/moving-average.js");
 
 const populationByCounty = readCsv("data/input/Average_Household_Size_and_Population_Density_-_County.csv")
 	.map(({GEOID, NAME, State, B01001_001E, B01001_calc_PopDensity}) => ({
@@ -17,7 +18,9 @@ const covidDeathsByCounty = readCsv("data/input/Provisional_COVID-19_Death_Count
 		fips_code: parseInt(row["FIPS County Code"], 10),
 		county: row["County name"],
 		state_code: row["State"],
-		covid_deaths: row["Deaths involving COVID-19"].replace(",", "") || 0
+		// An empty cell indicates a value between 1-9 has been "suppressed in accordance with NCHS confidentiality standards."
+		// These tend to be red states, so leniently assume the worst case, 9 deaths.
+		covid_deaths: row["Deaths involving COVID-19"].replace(",", "") || 9
 	}));
 
 covidDeathsByCounty.writeCsv("data/intermediate/covid-deaths-by-county.csv");
@@ -26,7 +29,31 @@ const stateToParty = readCsv("data/input/state-to-party.csv");
 
 const mortalityRateAndPopDensityByCounty = populationByCounty
 	.innerJoin(covidDeathsByCounty, ["fips_code"], ["fips_code"])
-	.innerJoin(stateToParty, ["state_code"], ["state_code"]);
+	.innerJoin(stateToParty, ["state_code"], ["state_code"])
+	.map(inputRow => {
+		const row = {
+			...inputRow,
+			mortality_rate: inputRow.covid_deaths * 100_000 / inputRow.total_pop
+		};
+		delete row.fips_code;
+		delete row.state_code;
+		return row;
+	})
+	.filter(row => row.pop_density <= 6);
 
 mortalityRateAndPopDensityByCounty.writeCsv("data/output/mortality-vs-pop-density.csv");
+console.log("Wrote data/output/mortality-vs-pop-density.csv");
 
+const countyStatsByParty = mortalityRateAndPopDensityByCounty
+	.groupBy(row => row.party)
+	.filter(([party, countyStats]) => party !== "-")
+	.map(([party, countyStats]) => ({
+		party,
+		// movingAverage: movingAverage({data: countyStats, x: "pop_density", y: "mortality_rate", windowWidth: 5, stepWidth: 1, logarithmic: false})
+		movingAverage: movingAverage({data: countyStats, x: "pop_density", y: "mortality_rate", windowWidth: 0.5, stepWidth: 0.1, logarithmic: true})
+	}))
+	.writeJson("data/output/mortality-vs-pop-density-trendlines.json");
+console.log("Wrote data/output/mortality-vs-pop-density-trendlines.json");
+
+// console.log(movingAverage([{a: "CA", b: 50, c: 20}, {a: "MA", b: 10, c: 21}, {a: "NY", b: 20, c: 19}], "b", "c", 20, 10));
+// console.log(movingAverage([{a: "CA", b: 50, c: 20}, {a: "MA", b: 10, c: 21}, {a: "NY", b: 20, c: 19}], "b", "c", 20, 20));

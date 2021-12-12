@@ -1,6 +1,22 @@
+const Fs = require('fs');
 const {writeCsv} = require("./csv-io.js");
 
 Array.prototype.writeCsv = writeCsv;
+Array.prototype.writeJson = function (fileName) {
+	Fs.writeFileSync(fileName, JSON.stringify(this, null, 4));
+};
+
+const identity = x => x;
+
+Array.prototype.sum = function (keyFunc) {
+	keyFunc = keyFunc || identity;
+	return this.reduce((cumulative, row) => cumulative + keyFunc(row), 0);
+};
+
+Array.prototype.average = function (keyFunc) {
+	keyFunc = keyFunc || identity;
+	return this.sum(keyFunc) / this.length;
+};
 
 /**
  * Order of original objects is preserved.
@@ -19,8 +35,8 @@ Array.prototype.writeCsv = writeCsv;
  *   ]]
  * ]
  */
-Array.prototype.groupBy = function(keyFunc) {
-	const keyMap = this.reduce(function(map, x) {
+Array.prototype.groupBy = function (keyFunc) {
+	const keyMap = this.reduce(function (map, x) {
 		const key = keyFunc(x);
 		if (key in map) {
 			map[key].push(x);

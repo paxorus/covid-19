@@ -1,0 +1,345 @@
+[
+    {
+        "party": "R",
+        "movingAverage": [
+            {
+                "pop_density": 0.19042288514573374,
+                "mortality_rate": 749.9686380509501
+            },
+            {
+                "pop_density": 0.20946517366030715,
+                "mortality_rate": 808.4025681242431
+            },
+            {
+                "pop_density": 0.23041169102633788,
+                "mortality_rate": 808.4025681242431
+            },
+            {
+                "pop_density": 0.25345286012897167,
+                "mortality_rate": 890.8679458985691
+            },
+            {
+                "pop_density": 0.2787981461418689,
+                "mortality_rate": 778.5564850213109
+            },
+            {
+                "pop_density": 0.3066779607560558,
+                "mortality_rate": 603.3781164516646
+            },
+            {
+                "pop_density": 0.33734575683166135,
+                "mortality_rate": 532.0455428790035
+            },
+            {
+                "pop_density": 0.3710803325148276,
+                "mortality_rate": 467.4267844307924
+            },
+            {
+                "pop_density": 0.4081883657663104,
+                "mortality_rate": 467.97489507480924
+            },
+            {
+                "pop_density": 0.44900720234294145,
+                "mortality_rate": 496.64732217967094
+            },
+            {
+                "pop_density": 0.4939079225772356,
+                "mortality_rate": 483.01437845405525
+            },
+            {
+                "pop_density": 0.5432987148349592,
+                "mortality_rate": 454.9984437801448
+            },
+            {
+                "pop_density": 0.5976285863184552,
+                "mortality_rate": 380.4401733483391
+            },
+            {
+                "pop_density": 0.6573914449503007,
+                "mortality_rate": 327.6847545472322
+            },
+            {
+                "pop_density": 0.7231305894453309,
+                "mortality_rate": 344.82267048170115
+            },
+            {
+                "pop_density": 0.795443648389864,
+                "mortality_rate": 336.95317121989063
+            },
+            {
+                "pop_density": 0.8749880132288506,
+                "mortality_rate": 299.38926842011
+            },
+            {
+                "pop_density": 0.9624868145517357,
+                "mortality_rate": 318.4542043805128
+            },
+            {
+                "pop_density": 1.0587354960069093,
+                "mortality_rate": 301.85833953886794
+            },
+            {
+                "pop_density": 1.1646090456076004,
+                "mortality_rate": 285.79815036943336
+            },
+            {
+                "pop_density": 1.2810699501683607,
+                "mortality_rate": 290.64671803657274
+            },
+            {
+                "pop_density": 1.4091769451851968,
+                "mortality_rate": 293.75819865490496
+            },
+            {
+                "pop_density": 1.5500946397037165,
+                "mortality_rate": 289.42044003884877
+            },
+            {
+                "pop_density": 1.7051041036740884,
+                "mortality_rate": 281.66699435151764
+            },
+            {
+                "pop_density": 1.8756145140414973,
+                "mortality_rate": 258.232405986687
+            },
+            {
+                "pop_density": 2.063175965445647,
+                "mortality_rate": 247.88423298891365
+            },
+            {
+                "pop_density": 2.269493561990212,
+                "mortality_rate": 235.2394951633692
+            },
+            {
+                "pop_density": 2.496442918189233,
+                "mortality_rate": 227.4593901764217
+            },
+            {
+                "pop_density": 2.746087210008157,
+                "mortality_rate": 213.1896773117963
+            },
+            {
+                "pop_density": 3.0206959310089725,
+                "mortality_rate": 196.9497743213473
+            },
+            {
+                "pop_density": 3.32276552410987,
+                "mortality_rate": 191.10244384960293
+            },
+            {
+                "pop_density": 3.6550420765208576,
+                "mortality_rate": 190.5376070717925
+            },
+            {
+                "pop_density": 4.020546284172943,
+                "mortality_rate": 195.61709690845268
+            },
+            {
+                "pop_density": 4.422600912590238,
+                "mortality_rate": 200.11472044426387
+            },
+            {
+                "pop_density": 4.864861003849263,
+                "mortality_rate": 197.9100372209654
+            }
+        ]
+    },
+    {
+        "party": "S",
+        "movingAverage": [
+            {
+                "pop_density": 2.197079711800475,
+                "mortality_rate": 163.96510077856703
+            },
+            {
+                "pop_density": 2.4167876829805226,
+                "mortality_rate": 134.10213894149453
+            },
+            {
+                "pop_density": 2.658466451278575,
+                "mortality_rate": 258.77625556634524
+            },
+            {
+                "pop_density": 2.9243130964064328,
+                "mortality_rate": 227.66954597502502
+            },
+            {
+                "pop_density": 3.2167444060470762,
+                "mortality_rate": 272.7541387781317
+            },
+            {
+                "pop_density": 3.5384188466517843,
+                "mortality_rate": 238.54333795564227
+            },
+            {
+                "pop_density": 3.892260731316963,
+                "mortality_rate": 211.41910080721752
+            },
+            {
+                "pop_density": 4.281486804448659,
+                "mortality_rate": 205.2899896229332
+            },
+            {
+                "pop_density": 4.709635484893526,
+                "mortality_rate": 171.95981372491323
+            }
+        ]
+    },
+    {
+        "party": "D",
+        "movingAverage": [
+            {
+                "pop_density": 0.1321810267613325,
+                "mortality_rate": 917.4311926605504
+            },
+            {
+                "pop_density": 0.14539912943746577,
+                "mortality_rate": 491.8032786885246
+            },
+            {
+                "pop_density": 0.15993904238121237,
+                "mortality_rate": 332.8749675236206
+            },
+            {
+                "pop_density": 0.17593294661933365,
+                "mortality_rate": 306.68635397307963
+            },
+            {
+                "pop_density": 0.19352624128126703,
+                "mortality_rate": 306.68635397307963
+            },
+            {
+                "pop_density": 0.21287886540939377,
+                "mortality_rate": 214.1278916153572
+            },
+            {
+                "pop_density": 0.23416675195033315,
+                "mortality_rate": 221.1507471495851
+            },
+            {
+                "pop_density": 0.2575834271453665,
+                "mortality_rate": 235.19645821804096
+            },
+            {
+                "pop_density": 0.28334176985990317,
+                "mortality_rate": 235.19645821804096
+            },
+            {
+                "pop_density": 0.3116759468458935,
+                "mortality_rate": 498.1698349006074
+            },
+            {
+                "pop_density": 0.34284354153048285,
+                "mortality_rate": 412.7850510797368
+            },
+            {
+                "pop_density": 0.37712789568353117,
+                "mortality_rate": 330.9427754276868
+            },
+            {
+                "pop_density": 0.41484068525188433,
+                "mortality_rate": 314.8671946862763
+            },
+            {
+                "pop_density": 0.4563247537770728,
+                "mortality_rate": 209.7466923176974
+            },
+            {
+                "pop_density": 0.5019572291547801,
+                "mortality_rate": 214.70078831378402
+            },
+            {
+                "pop_density": 0.5521529520702582,
+                "mortality_rate": 283.1590110168445
+            },
+            {
+                "pop_density": 0.6073682472772841,
+                "mortality_rate": 236.71844584658132
+            },
+            {
+                "pop_density": 0.6681050720050126,
+                "mortality_rate": 209.40208810128624
+            },
+            {
+                "pop_density": 0.734915579205514,
+                "mortality_rate": 185.309850974464
+            },
+            {
+                "pop_density": 0.8084071371260654,
+                "mortality_rate": 154.69066438472004
+            },
+            {
+                "pop_density": 0.889247850838672,
+                "mortality_rate": 183.3301037891613
+            },
+            {
+                "pop_density": 0.9781726359225393,
+                "mortality_rate": 169.3120089917862
+            },
+            {
+                "pop_density": 1.0759898995147934,
+                "mortality_rate": 208.08287080564094
+            },
+            {
+                "pop_density": 1.1835888894662727,
+                "mortality_rate": 209.70367105308912
+            },
+            {
+                "pop_density": 1.3019477784129,
+                "mortality_rate": 211.580356013168
+            },
+            {
+                "pop_density": 1.4321425562541903,
+                "mortality_rate": 212.22923160904097
+            },
+            {
+                "pop_density": 1.5753568118796095,
+                "mortality_rate": 196.9196225603574
+            },
+            {
+                "pop_density": 1.7328924930675706,
+                "mortality_rate": 191.24652560785663
+            },
+            {
+                "pop_density": 1.906181742374328,
+                "mortality_rate": 170.59006857632485
+            },
+            {
+                "pop_density": 2.096799916611761,
+                "mortality_rate": 166.49778940603153
+            },
+            {
+                "pop_density": 2.3064799082729373,
+                "mortality_rate": 164.9547935412259
+            },
+            {
+                "pop_density": 2.537127899100231,
+                "mortality_rate": 158.23757745083313
+            },
+            {
+                "pop_density": 2.7908406890102544,
+                "mortality_rate": 146.7476759061676
+            },
+            {
+                "pop_density": 3.06992475791128,
+                "mortality_rate": 147.7083851594243
+            },
+            {
+                "pop_density": 3.376917233702408,
+                "mortality_rate": 144.61307590721597
+            },
+            {
+                "pop_density": 3.714608957072649,
+                "mortality_rate": 156.8392948501895
+            },
+            {
+                "pop_density": 4.0860698527799135,
+                "mortality_rate": 157.78445912351648
+            },
+            {
+                "pop_density": 4.494676838057906,
+                "mortality_rate": 144.13469984668782
+            }
+        ]
+    }
+]
