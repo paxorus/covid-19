@@ -17,7 +17,7 @@ const covidDeathsByCounty = readCsv("data/input/Provisional_COVID-19_Death_Count
 		fips_code: parseInt(row["FIPS County Code"], 10),
 		county: row["County name"],
 		state_code: row["State"],
-		covid_deaths: row["Deaths involving COVID-19"].replace(",", "")
+		covid_deaths: row["Deaths involving COVID-19"].replace(",", "") || 0
 	}));
 
 covidDeathsByCounty.writeCsv("data/intermediate/covid-deaths-by-county.csv");
