@@ -11,11 +11,11 @@ Array.prototype.writeCsv = writeCsv;
  * yields:
  * [
  *   [ "MA", [
- *     [{a: "MA", b: 10}],
- *     [{a: "MA", b: 50}]
+ *     {a: "MA", b: 10},
+ *     {a: "MA", b: 50}
  *   ]],
  *   [ "NY", [
- *     [{a: "NY", b: 20}]
+ *     {a: "NY", b: 20}
  *   ]]
  * ]
  */
