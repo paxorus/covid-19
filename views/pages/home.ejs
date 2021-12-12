@@ -57,15 +57,15 @@ const config = {
 		plugins: {
 			title: {
 				display: true,
-				text: "Covid-19 Mortality Rate over Population Density by County"
+				text: "Covid-19 Mortality County Rate over Population Density"
 			},
 			tooltip: {
 				callbacks: {
 					label: (context) => [
-						`${context.raw.county} (${context.raw.state})`,
-						`${Math.round(context.raw.pop_density)} people per sq mi`,
+						`${context.raw.county} (${context.raw.state}):`,
+						`${Math.round(context.raw.pop_density)} people per sq mi,`,
 						`${Math.round(context.parsed.y)} deaths / 100K`			
-					].join("\n")
+					].join(" ")
 				}
 			}
 		}
