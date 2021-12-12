@@ -12,7 +12,7 @@ app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res) {
-	const data = readCsv("data/boop.csv");
+	const data = readCsv("data/output/mortality-vs-pop-density.csv");
 	res.render("pages/home", {data});
 });
 

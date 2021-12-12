@@ -2,8 +2,8 @@
 
 ## How To
 1. Optional: Download the latest data (links below).
-2. Reproduce the data: `node main.js`
-3. Start the server locally: `node index.js`
+2. Reproduce the data: `node analyze.js`
+3. Start the server locally: `node server.js`
 4. Open [http://localhost:5000](http://localhost:5000).
 
 ## Datasets
