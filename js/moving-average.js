@@ -20,6 +20,10 @@ function movingAverage({data, x, y, windowWidth, stepWidth, logarithmic}) {
 	return output;
 }
 
+function percentile(list, P) {
+	return list[Math.min(list.length - 1, Math.max(0, Math.round(P / 100 * list.length)))];
+}
+
 class SlidingWindow {
 	constructor(data, x, y, windowWidth, stepWidth, logarithmic) {
 		this.data = data;
@@ -88,15 +92,22 @@ class SlidingWindow {
 
 	aggregateWindow() {
 		const dataWindow = this.getWindow();
-		const yAverage = dataWindow.average(row => row[this.y]);
-		const yStdDev = dataWindow.popStdDev(yAverage, row => row[this.y]);
+		// const yAverage = dataWindow.average(row => row[this.y]);
+		// const yStdDev = dataWindow.popStdDev(yAverage, row => row[this.y]);
+		dataWindow.sort((a, b) => a[this.y] - b[this.y]);
+		const yMedian = percentile(dataWindow, 50)[this.y];
+		const yLower = percentile(dataWindow, 2.5)[this.y];
+		const yUpper = percentile(dataWindow, 97.5)[this.y];
+
 		const xCenter = this.windowCenter();
 
 		return {
 			[this.x]: xCenter,
-			[this.y]: yAverage,
+			// [this.y]: yAverage,
+			[this.y]: yMedian,
 			[this.x + "_window"]: [this.windowLeft, this.windowRight()],
-			[this.y + "_error_margins"]: [yAverage - 2 * yStdDev, yAverage + 2 * yStdDev],
+			// [this.y + "_error_margins"]: [yAverage - 2 * yStdDev, yAverage + 2 * yStdDev],
+			[this.y + "_error_margins"]: [yLower, yUpper],
 			n: dataWindow.length
 		};
 	}
