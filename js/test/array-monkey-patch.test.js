@@ -48,4 +48,16 @@ describe("Array Monkey Patch module", () => {
 		});
 	});
 
+
+	describe("#average, #popStdDev", () => {
+		it("computes the average and population standard deviation", () => {
+			const data = [2, 4, 4, 4, 5, 5, 7, 9];
+
+			const actualAverage = data.average();
+			assert.equal(actualAverage, 5);
+
+			const actualPopStdDev = data.popStdDev(actualAverage);
+			assert.equal(actualPopStdDev, 2);
+		});
+	});
 });
