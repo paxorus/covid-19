@@ -4,143 +4,1147 @@
         "movingAverage": [
             {
                 "pop_density": 0.19042288514573374,
-                "mortality_rate": 749.9686380509501
+                "mortality_rate": 749.9686380509501,
+                "pop_density_window": [
+                    0.152338308116587,
+                    0.2285074621748805
+                ],
+                "mortality_rate_error_margins": [
+                    18.482039906600335,
+                    1481.4552361952997
+                ],
+                "n": 4
             },
             {
                 "pop_density": 0.20946517366030715,
-                "mortality_rate": 808.4025681242431
+                "mortality_rate": 808.4025681242431,
+                "pop_density_window": [
+                    0.1675721389282457,
+                    0.25135820839236855
+                ],
+                "mortality_rate_error_margins": [
+                    133.19225328098435,
+                    1483.6128829675017
+                ],
+                "n": 7
             },
             {
                 "pop_density": 0.23041169102633788,
-                "mortality_rate": 808.4025681242431
+                "mortality_rate": 808.4025681242431,
+                "pop_density_window": [
+                    0.1843293528210703,
+                    0.27649402923160543
+                ],
+                "mortality_rate_error_margins": [
+                    133.19225328098435,
+                    1483.6128829675017
+                ],
+                "n": 7
             },
             {
                 "pop_density": 0.25345286012897167,
-                "mortality_rate": 890.8679458985691
+                "mortality_rate": 890.8679458985691,
+                "pop_density_window": [
+                    0.20276228810317734,
+                    0.304143432154766
+                ],
+                "mortality_rate_error_margins": [
+                    185.2970237775504,
+                    1596.438868019588
+                ],
+                "n": 8
             },
             {
                 "pop_density": 0.2787981461418689,
-                "mortality_rate": 778.5564850213109
+                "mortality_rate": 778.5564850213109,
+                "pop_density_window": [
+                    0.2230385169134951,
+                    0.33455777537024267
+                ],
+                "mortality_rate_error_margins": [
+                    -14.431681240984062,
+                    1571.5446512836058
+                ],
+                "n": 12
             },
             {
                 "pop_density": 0.3066779607560558,
-                "mortality_rate": 603.3781164516646
+                "mortality_rate": 603.3781164516646,
+                "pop_density_window": [
+                    0.24534236860484462,
+                    0.36801355290726695
+                ],
+                "mortality_rate_error_margins": [
+                    -223.588806607994,
+                    1430.3450395113232
+                ],
+                "n": 8
             },
             {
                 "pop_density": 0.33734575683166135,
-                "mortality_rate": 532.0455428790035
+                "mortality_rate": 532.0455428790035,
+                "pop_density_window": [
+                    0.2698766054653291,
+                    0.40481490819799365
+                ],
+                "mortality_rate_error_margins": [
+                    -245.28992762621044,
+                    1309.3810133842176
+                ],
+                "n": 14
             },
             {
                 "pop_density": 0.3710803325148276,
-                "mortality_rate": 467.4267844307924
+                "mortality_rate": 467.4267844307924,
+                "pop_density_window": [
+                    0.29686426601186205,
+                    0.44529639901779305
+                ],
+                "mortality_rate_error_margins": [
+                    -141.38000642232248,
+                    1076.2335752839072
+                ],
+                "n": 15
             },
             {
                 "pop_density": 0.4081883657663104,
-                "mortality_rate": 467.97489507480924
+                "mortality_rate": 467.97489507480924,
+                "pop_density_window": [
+                    0.3265506926130483,
+                    0.48982603891957244
+                ],
+                "mortality_rate_error_margins": [
+                    -52.33838306977776,
+                    988.2881732193962
+                ],
+                "n": 14
             },
             {
                 "pop_density": 0.44900720234294145,
-                "mortality_rate": 496.64732217967094
+                "mortality_rate": 496.64732217967094,
+                "pop_density_window": [
+                    0.35920576187435316,
+                    0.5388086428115297
+                ],
+                "mortality_rate_error_margins": [
+                    -0.4169529785515351,
+                    993.7115973378934
+                ],
+                "n": 17
             },
             {
                 "pop_density": 0.4939079225772356,
-                "mortality_rate": 483.01437845405525
+                "mortality_rate": 483.01437845405525,
+                "pop_density_window": [
+                    0.3951263380617885,
+                    0.5926895070926828
+                ],
+                "mortality_rate_error_margins": [
+                    -22.17588430761316,
+                    988.2046412157237
+                ],
+                "n": 19
             },
             {
                 "pop_density": 0.5432987148349592,
-                "mortality_rate": 454.9984437801448
+                "mortality_rate": 454.9984437801448,
+                "pop_density_window": [
+                    0.43463897186796735,
+                    0.651958457801951
+                ],
+                "mortality_rate_error_margins": [
+                    18.23175268856454,
+                    891.765134871725
+                ],
+                "n": 21
             },
             {
                 "pop_density": 0.5976285863184552,
-                "mortality_rate": 380.4401733483391
+                "mortality_rate": 380.4401733483391,
+                "pop_density_window": [
+                    0.4781028690547641,
+                    0.7171543035821462
+                ],
+                "mortality_rate_error_margins": [
+                    -38.61665235013436,
+                    799.4969990468126
+                ],
+                "n": 28
             },
             {
                 "pop_density": 0.6573914449503007,
-                "mortality_rate": 327.6847545472322
+                "mortality_rate": 327.6847545472322,
+                "pop_density_window": [
+                    0.5259131559602406,
+                    0.7888697339403609
+                ],
+                "mortality_rate_error_margins": [
+                    -73.15971445118731,
+                    728.5292235456518
+                ],
+                "n": 34
             },
             {
                 "pop_density": 0.7231305894453309,
-                "mortality_rate": 344.82267048170115
+                "mortality_rate": 344.82267048170115,
+                "pop_density_window": [
+                    0.5785044715562647,
+                    0.867756707334397
+                ],
+                "mortality_rate_error_margins": [
+                    -31.497271667337657,
+                    721.1426126307399
+                ],
+                "n": 40
             },
             {
                 "pop_density": 0.795443648389864,
-                "mortality_rate": 336.95317121989063
+                "mortality_rate": 336.95317121989063,
+                "pop_density_window": [
+                    0.6363549187118912,
+                    0.9545323780678368
+                ],
+                "mortality_rate_error_margins": [
+                    -32.66586660281956,
+                    706.5722090426009
+                ],
+                "n": 48
             },
             {
                 "pop_density": 0.8749880132288506,
-                "mortality_rate": 299.38926842011
+                "mortality_rate": 299.38926842011,
+                "pop_density_window": [
+                    0.6999904105830804,
+                    1.0499856158746206
+                ],
+                "mortality_rate_error_margins": [
+                    -40.97157007974931,
+                    639.7501069199693
+                ],
+                "n": 56
             },
             {
                 "pop_density": 0.9624868145517357,
-                "mortality_rate": 318.4542043805128
+                "mortality_rate": 318.4542043805128,
+                "pop_density_window": [
+                    0.7699894516413885,
+                    1.1549841774620828
+                ],
+                "mortality_rate_error_margins": [
+                    -3.4948128802146243,
+                    640.4032216412402
+                ],
+                "n": 60
             },
             {
                 "pop_density": 1.0587354960069093,
-                "mortality_rate": 301.85833953886794
+                "mortality_rate": 301.85833953886794,
+                "pop_density_window": [
+                    0.8469883968055275,
+                    1.2704825952082912
+                ],
+                "mortality_rate_error_margins": [
+                    5.743692204241199,
+                    597.9729868734946
+                ],
+                "n": 61
             },
             {
                 "pop_density": 1.1646090456076004,
-                "mortality_rate": 285.79815036943336
+                "mortality_rate": 285.79815036943336,
+                "pop_density_window": [
+                    0.9316872364860803,
+                    1.3975308547291205
+                ],
+                "mortality_rate_error_margins": [
+                    29.68145728335054,
+                    541.9148434555161
+                ],
+                "n": 63
             },
             {
                 "pop_density": 1.2810699501683607,
-                "mortality_rate": 290.64671803657274
+                "mortality_rate": 290.64671803657274,
+                "pop_density_window": [
+                    1.0248559601346885,
+                    1.5372839402020326
+                ],
+                "mortality_rate_error_margins": [
+                    49.642724338769824,
+                    531.6507117343756
+                ],
+                "n": 73
             },
             {
                 "pop_density": 1.4091769451851968,
-                "mortality_rate": 293.75819865490496
+                "mortality_rate": 293.75819865490496,
+                "pop_density_window": [
+                    1.1273415561481575,
+                    1.6910123342222363
+                ],
+                "mortality_rate_error_margins": [
+                    41.069996064224966,
+                    546.446401245585
+                ],
+                "n": 83
             },
             {
                 "pop_density": 1.5500946397037165,
-                "mortality_rate": 289.42044003884877
+                "mortality_rate": 289.42044003884877,
+                "pop_density_window": [
+                    1.2400757117629733,
+                    1.86011356764446
+                ],
+                "mortality_rate_error_margins": [
+                    26.452536861338956,
+                    552.3883432163586
+                ],
+                "n": 85
             },
             {
                 "pop_density": 1.7051041036740884,
-                "mortality_rate": 281.66699435151764
+                "mortality_rate": 281.66699435151764,
+                "pop_density_window": [
+                    1.3640832829392706,
+                    2.0461249244089057
+                ],
+                "mortality_rate_error_margins": [
+                    1.8801072125042992,
+                    561.453881490531
+                ],
+                "n": 77
             },
             {
                 "pop_density": 1.8756145140414973,
-                "mortality_rate": 258.232405986687
+                "mortality_rate": 258.232405986687,
+                "pop_density_window": [
+                    1.5004916112331979,
+                    2.250737416849797
+                ],
+                "mortality_rate_error_margins": [
+                    -2.2616833831241365,
+                    518.7264953564982
+                ],
+                "n": 75
             },
             {
                 "pop_density": 2.063175965445647,
-                "mortality_rate": 247.88423298891365
+                "mortality_rate": 247.88423298891365,
+                "pop_density_window": [
+                    1.6505407723565177,
+                    2.4758111585347766
+                ],
+                "mortality_rate_error_margins": [
+                    2.8435615697783305,
+                    492.924904408049
+                ],
+                "n": 74
             },
             {
                 "pop_density": 2.269493561990212,
-                "mortality_rate": 235.2394951633692
+                "mortality_rate": 235.2394951633692,
+                "pop_density_window": [
+                    1.8155948495921697,
+                    2.7233922743882544
+                ],
+                "mortality_rate_error_margins": [
+                    4.336912250863946,
+                    466.14207807587445
+                ],
+                "n": 69
             },
             {
                 "pop_density": 2.496442918189233,
-                "mortality_rate": 227.4593901764217
+                "mortality_rate": 227.4593901764217,
+                "pop_density_window": [
+                    1.9971543345513867,
+                    2.99573150182708
+                ],
+                "mortality_rate_error_margins": [
+                    -0.19572395277995724,
+                    455.1145043056233
+                ],
+                "n": 72
             },
             {
                 "pop_density": 2.746087210008157,
-                "mortality_rate": 213.1896773117963
+                "mortality_rate": 213.1896773117963,
+                "pop_density_window": [
+                    2.1968697680065254,
+                    3.295304652009788
+                ],
+                "mortality_rate_error_margins": [
+                    11.953753322911126,
+                    414.4256013006815
+                ],
+                "n": 80
             },
             {
                 "pop_density": 3.0206959310089725,
-                "mortality_rate": 196.9497743213473
+                "mortality_rate": 196.9497743213473,
+                "pop_density_window": [
+                    2.416556744807178,
+                    3.6248351172107673
+                ],
+                "mortality_rate_error_margins": [
+                    7.663979187983216,
+                    386.23556945471137
+                ],
+                "n": 87
             },
             {
                 "pop_density": 3.32276552410987,
-                "mortality_rate": 191.10244384960293
+                "mortality_rate": 191.10244384960293,
+                "pop_density_window": [
+                    2.658212419287896,
+                    3.9873186289318445
+                ],
+                "mortality_rate_error_margins": [
+                    9.906970057638688,
+                    372.2979176415672
+                ],
+                "n": 95
             },
             {
                 "pop_density": 3.6550420765208576,
-                "mortality_rate": 190.5376070717925
+                "mortality_rate": 190.5376070717925,
+                "pop_density_window": [
+                    2.924033661216686,
+                    4.386050491825029
+                ],
+                "mortality_rate_error_margins": [
+                    9.839288835435951,
+                    371.23592530814904
+                ],
+                "n": 97
             },
             {
                 "pop_density": 4.020546284172943,
-                "mortality_rate": 195.61709690845268
+                "mortality_rate": 195.61709690845268,
+                "pop_density_window": [
+                    3.2164370273383547,
+                    4.824655541007532
+                ],
+                "mortality_rate_error_margins": [
+                    -11.605654264053868,
+                    402.8398480809592
+                ],
+                "n": 97
             },
             {
                 "pop_density": 4.422600912590238,
-                "mortality_rate": 200.11472044426387
+                "mortality_rate": 200.11472044426387,
+                "pop_density_window": [
+                    3.5380807300721906,
+                    5.307121095108286
+                ],
+                "mortality_rate_error_margins": [
+                    -18.597160372763113,
+                    418.8266012612909
+                ],
+                "n": 108
             },
             {
                 "pop_density": 4.864861003849263,
-                "mortality_rate": 197.9100372209654
+                "mortality_rate": 197.9100372209654,
+                "pop_density_window": [
+                    3.89188880307941,
+                    5.837833204619114
+                ],
+                "mortality_rate_error_margins": [
+                    -17.662056173332417,
+                    413.4821306152632
+                ],
+                "n": 109
+            },
+            {
+                "pop_density": 5.351347104234189,
+                "mortality_rate": 192.32583094269165,
+                "pop_density_window": [
+                    4.281077683387351,
+                    6.421616525081026
+                ],
+                "mortality_rate_error_margins": [
+                    -25.66938054647906,
+                    410.32104243186234
+                ],
+                "n": 128
+            },
+            {
+                "pop_density": 5.886481814657608,
+                "mortality_rate": 188.80190596755776,
+                "pop_density_window": [
+                    4.7091854517260865,
+                    7.06377817758913
+                ],
+                "mortality_rate_error_margins": [
+                    -10.848814457706567,
+                    388.4526263928221
+                ],
+                "n": 134
+            },
+            {
+                "pop_density": 6.4751299961233695,
+                "mortality_rate": 177.83658590919376,
+                "pop_density_window": [
+                    5.180103996898696,
+                    7.770155995348044
+                ],
+                "mortality_rate_error_margins": [
+                    -7.263819321622179,
+                    362.9369911400097
+                ],
+                "n": 151
+            },
+            {
+                "pop_density": 7.122642995735707,
+                "mortality_rate": 176.69171202402484,
+                "pop_density_window": [
+                    5.698114396588566,
+                    8.54717159488285
+                ],
+                "mortality_rate_error_margins": [
+                    -10.758587039002663,
+                    364.1420110870523
+                ],
+                "n": 158
+            },
+            {
+                "pop_density": 7.834907295309279,
+                "mortality_rate": 183.10553298190797,
+                "pop_density_window": [
+                    6.267925836247423,
+                    9.401888754371136
+                ],
+                "mortality_rate_error_margins": [
+                    -13.351120454379128,
+                    379.5621864181951
+                ],
+                "n": 184
+            },
+            {
+                "pop_density": 8.618398024840207,
+                "mortality_rate": 179.78362228736663,
+                "pop_density_window": [
+                    6.8947184198721665,
+                    10.34207762980825
+                ],
+                "mortality_rate_error_margins": [
+                    -15.521188129942743,
+                    375.088432704676
+                ],
+                "n": 203
+            },
+            {
+                "pop_density": 9.48023782732423,
+                "mortality_rate": 173.33126907264946,
+                "pop_density_window": [
+                    7.5841902618593835,
+                    11.376285392789075
+                ],
+                "mortality_rate_error_margins": [
+                    -19.00669273467912,
+                    365.66923087997804
+                ],
+                "n": 218
+            },
+            {
+                "pop_density": 10.428261610056653,
+                "mortality_rate": 173.6991035783103,
+                "pop_density_window": [
+                    8.342609288045322,
+                    12.513913932067982
+                ],
+                "mortality_rate_error_margins": [
+                    -20.0227531269216,
+                    367.4209602835422
+                ],
+                "n": 231
+            },
+            {
+                "pop_density": 11.471087771062319,
+                "mortality_rate": 168.64078714463662,
+                "pop_density_window": [
+                    9.176870216849855,
+                    13.765305325274781
+                ],
+                "mortality_rate_error_margins": [
+                    -23.592741713591607,
+                    360.8743160028648
+                ],
+                "n": 221
+            },
+            {
+                "pop_density": 12.618196548168552,
+                "mortality_rate": 158.01438657821134,
+                "pop_density_window": [
+                    10.094557238534842,
+                    15.141835857802263
+                ],
+                "mortality_rate_error_margins": [
+                    -25.730001127244805,
+                    341.7587742836675
+                ],
+                "n": 237
+            },
+            {
+                "pop_density": 13.880016202985408,
+                "mortality_rate": 161.47041714066282,
+                "pop_density_window": [
+                    11.104012962388326,
+                    16.65601944358249
+                ],
+                "mortality_rate_error_margins": [
+                    -31.390321375740143,
+                    354.3311556570658
+                ],
+                "n": 235
+            },
+            {
+                "pop_density": 15.26801782328395,
+                "mortality_rate": 163.37392237575833,
+                "pop_density_window": [
+                    12.21441425862716,
+                    18.32162138794074
+                ],
+                "mortality_rate_error_margins": [
+                    -40.88762780581888,
+                    367.63547255733556
+                ],
+                "n": 236
+            },
+            {
+                "pop_density": 16.794819605612346,
+                "mortality_rate": 174.28589398863647,
+                "pop_density_window": [
+                    13.435855684489878,
+                    20.153783526734816
+                ],
+                "mortality_rate_error_margins": [
+                    -48.98758158270624,
+                    397.5593695599792
+                ],
+                "n": 252
+            },
+            {
+                "pop_density": 18.474301566173583,
+                "mortality_rate": 178.14368329269186,
+                "pop_density_window": [
+                    14.779441252938867,
+                    22.1691618794083
+                ],
+                "mortality_rate_error_margins": [
+                    -52.70571922410636,
+                    408.9930858094901
+                ],
+                "n": 243
+            },
+            {
+                "pop_density": 20.321731722790943,
+                "mortality_rate": 190.1259822221386,
+                "pop_density_window": [
+                    16.257385378232755,
+                    24.386078067349132
+                ],
+                "mortality_rate_error_margins": [
+                    -50.1579505105868,
+                    430.409914954864
+                ],
+                "n": 232
+            },
+            {
+                "pop_density": 22.35390489507004,
+                "mortality_rate": 202.7273791027145,
+                "pop_density_window": [
+                    17.883123916056032,
+                    26.824685874084047
+                ],
+                "mortality_rate_error_margins": [
+                    -48.32969978843366,
+                    453.7844579938627
+                ],
+                "n": 237
+            },
+            {
+                "pop_density": 24.589295384577046,
+                "mortality_rate": 203.2550657189272,
+                "pop_density_window": [
+                    19.671436307661637,
+                    29.507154461492455
+                ],
+                "mortality_rate_error_margins": [
+                    -54.82775791388673,
+                    461.3378893517411
+                ],
+                "n": 213
+            },
+            {
+                "pop_density": 27.048224923034752,
+                "mortality_rate": 219.6126323368931,
+                "pop_density_window": [
+                    21.638579938427803,
+                    32.45786990764171
+                ],
+                "mortality_rate_error_margins": [
+                    -66.69552933593707,
+                    505.9207940097233
+                ],
+                "n": 206
+            },
+            {
+                "pop_density": 29.75304741533823,
+                "mortality_rate": 225.09971710530615,
+                "pop_density_window": [
+                    23.802437932270585,
+                    35.70365689840588
+                ],
+                "mortality_rate_error_margins": [
+                    -74.6530495839477,
+                    524.85248379456
+                ],
+                "n": 200
+            },
+            {
+                "pop_density": 32.728352156872056,
+                "mortality_rate": 233.74849219410305,
+                "pop_density_window": [
+                    26.182681725497645,
+                    39.27402258824647
+                ],
+                "mortality_rate_error_margins": [
+                    -101.09371280023532,
+                    568.5906971884415
+                ],
+                "n": 200
+            },
+            {
+                "pop_density": 36.001187372559265,
+                "mortality_rate": 242.24364970595676,
+                "pop_density_window": [
+                    28.80094989804741,
+                    43.20142484707112
+                ],
+                "mortality_rate_error_margins": [
+                    -113.01339968562351,
+                    597.500699097537
+                ],
+                "n": 188
+            },
+            {
+                "pop_density": 39.60130610981519,
+                "mortality_rate": 238.72065003629464,
+                "pop_density_window": [
+                    31.681044887852153,
+                    47.52156733177823
+                ],
+                "mortality_rate_error_margins": [
+                    -108.59760333524153,
+                    586.0389034078308
+                ],
+                "n": 161
+            },
+            {
+                "pop_density": 43.56143672079671,
+                "mortality_rate": 240.8908162621429,
+                "pop_density_window": [
+                    34.84914937663737,
+                    52.273724064956056
+                ],
+                "mortality_rate_error_margins": [
+                    -120.39778426230782,
+                    602.1794167865936
+                ],
+                "n": 152
+            },
+            {
+                "pop_density": 47.91758039287639,
+                "mortality_rate": 250.44877672587936,
+                "pop_density_window": [
+                    38.33406431430111,
+                    57.50109647145166
+                ],
+                "mortality_rate_error_margins": [
+                    -105.64962393784648,
+                    606.5471773896052
+                ],
+                "n": 129
+            },
+            {
+                "pop_density": 52.70933843216403,
+                "mortality_rate": 261.73398418636606,
+                "pop_density_window": [
+                    42.16747074573122,
+                    63.25120611859683
+                ],
+                "mortality_rate_error_margins": [
+                    -116.43964397343234,
+                    639.9076123461645
+                ],
+                "n": 117
+            },
+            {
+                "pop_density": 57.980272275380436,
+                "mortality_rate": 281.4686650811444,
+                "pop_density_window": [
+                    46.38421782030435,
+                    69.57632673045653
+                ],
+                "mortality_rate_error_margins": [
+                    -145.4354947543257,
+                    708.3728249166145
+                ],
+                "n": 113
+            },
+            {
+                "pop_density": 63.778299502918486,
+                "mortality_rate": 299.464769567715,
+                "pop_density_window": [
+                    51.02263960233479,
+                    76.5339594035022
+                ],
+                "mortality_rate_error_margins": [
+                    -144.31283169039978,
+                    743.2423708258298
+                ],
+                "n": 110
+            },
+            {
+                "pop_density": 70.15612945321035,
+                "mortality_rate": 313.15234519269393,
+                "pop_density_window": [
+                    56.12490356256828,
+                    84.18735534385242
+                ],
+                "mortality_rate_error_margins": [
+                    -116.22531151219647,
+                    742.5300018975843
+                ],
+                "n": 91
+            },
+            {
+                "pop_density": 77.17174239853139,
+                "mortality_rate": 323.39903875063726,
+                "pop_density_window": [
+                    61.73739391882511,
+                    92.60609087823767
+                ],
+                "mortality_rate_error_margins": [
+                    -78.85572612659928,
+                    725.6538036278738
+                ],
+                "n": 91
+            },
+            {
+                "pop_density": 84.88891663838453,
+                "mortality_rate": 315.8971397115044,
+                "pop_density_window": [
+                    67.91113331070763,
+                    101.86669996606145
+                ],
+                "mortality_rate_error_margins": [
+                    -50.87168991491819,
+                    682.665969337927
+                ],
+                "n": 84
+            },
+            {
+                "pop_density": 93.377808302223,
+                "mortality_rate": 317.4805185194467,
+                "pop_density_window": [
+                    74.7022466417784,
+                    112.0533699626676
+                ],
+                "mortality_rate_error_margins": [
+                    -22.89469783989108,
+                    657.8557348787845
+                ],
+                "n": 80
+            },
+            {
+                "pop_density": 102.71558913244532,
+                "mortality_rate": 316.24218237775943,
+                "pop_density_window": [
+                    82.17247130595625,
+                    123.25870695893437
+                ],
+                "mortality_rate_error_margins": [
+                    -35.11310821734713,
+                    667.597472972866
+                ],
+                "n": 86
+            },
+            {
+                "pop_density": 112.98714804568986,
+                "mortality_rate": 322.3339933014511,
+                "pop_density_window": [
+                    90.38971843655189,
+                    135.58457765482783
+                ],
+                "mortality_rate_error_margins": [
+                    -41.09264343278329,
+                    685.7606300356854
+                ],
+                "n": 79
+            },
+            {
+                "pop_density": 124.28586285025885,
+                "mortality_rate": 299.1200452583375,
+                "pop_density_window": [
+                    99.42869028020708,
+                    149.1430354203106
+                ],
+                "mortality_rate_error_margins": [
+                    -22.77176221640184,
+                    621.0118527330768
+                ],
+                "n": 74
+            },
+            {
+                "pop_density": 136.71444913528475,
+                "mortality_rate": 299.30760489591535,
+                "pop_density_window": [
+                    109.3715593082278,
+                    164.0573389623417
+                ],
+                "mortality_rate_error_margins": [
+                    -12.633827998935203,
+                    611.2490377907659
+                ],
+                "n": 69
+            },
+            {
+                "pop_density": 150.38589404881324,
+                "mortality_rate": 296.2310826309623,
+                "pop_density_window": [
+                    120.30871523905058,
+                    180.46307285857588
+                ],
+                "mortality_rate_error_margins": [
+                    -29.42000832159306,
+                    621.8821735835177
+                ],
+                "n": 58
+            },
+            {
+                "pop_density": 165.42448345369456,
+                "mortality_rate": 291.7044340842714,
+                "pop_density_window": [
+                    132.33958676295566,
+                    198.5093801444335
+                ],
+                "mortality_rate_error_margins": [
+                    -27.00163428607584,
+                    610.4105024546186
+                ],
+                "n": 55
+            },
+            {
+                "pop_density": 181.96693179906404,
+                "mortality_rate": 314.26978449506805,
+                "pop_density_window": [
+                    145.57354543925123,
+                    218.36031815887685
+                ],
+                "mortality_rate_error_margins": [
+                    -11.49856253352965,
+                    640.0381315236657
+                ],
+                "n": 49
+            },
+            {
+                "pop_density": 200.16362497897046,
+                "mortality_rate": 306.2412451824092,
+                "pop_density_window": [
+                    160.13089998317636,
+                    240.19634997476453
+                ],
+                "mortality_rate_error_margins": [
+                    17.356767868016732,
+                    595.1257224968017
+                ],
+                "n": 40
+            },
+            {
+                "pop_density": 220.1799874768675,
+                "mortality_rate": 314.5930365694768,
+                "pop_density_window": [
+                    176.143989981494,
+                    264.215984972241
+                ],
+                "mortality_rate_error_margins": [
+                    112.67851366166141,
+                    516.5075594772921
+                ],
+                "n": 32
+            },
+            {
+                "pop_density": 242.19798622455428,
+                "mortality_rate": 305.2516846845933,
+                "pop_density_window": [
+                    193.75838897964343,
+                    290.63758346946514
+                ],
+                "mortality_rate_error_margins": [
+                    101.80499127756116,
+                    508.6983780916254
+                ],
+                "n": 31
+            },
+            {
+                "pop_density": 266.4177848470097,
+                "mortality_rate": 304.3555719341144,
+                "pop_density_window": [
+                    213.1342278776078,
+                    319.7013418164117
+                ],
+                "mortality_rate_error_margins": [
+                    100.71962401597523,
+                    507.99151985225353
+                ],
+                "n": 25
+            },
+            {
+                "pop_density": 293.05956333171076,
+                "mortality_rate": 292.3720886293129,
+                "pop_density_window": [
+                    234.4476506653686,
+                    351.67147599805287
+                ],
+                "mortality_rate_error_margins": [
+                    92.34846152556995,
+                    492.3957157330558
+                ],
+                "n": 22
+            },
+            {
+                "pop_density": 322.36551966488184,
+                "mortality_rate": 283.6547590042909,
+                "pop_density_window": [
+                    257.8924157319055,
+                    386.83862359785826
+                ],
+                "mortality_rate_error_margins": [
+                    71.97101959329976,
+                    495.33849841528206
+                ],
+                "n": 21
+            },
+            {
+                "pop_density": 354.60207163137005,
+                "mortality_rate": 279.20128860824235,
+                "pop_density_window": [
+                    283.68165730509605,
+                    425.5224859576441
+                ],
+                "mortality_rate_error_margins": [
+                    65.19603431021227,
+                    493.20654290627243
+                ],
+                "n": 23
+            },
+            {
+                "pop_density": 390.0622787945071,
+                "mortality_rate": 288.94987757964964,
+                "pop_density_window": [
+                    312.0498230356057,
+                    468.0747345534086
+                ],
+                "mortality_rate_error_margins": [
+                    79.25071306294782,
+                    498.6490420963514
+                ],
+                "n": 26
+            },
+            {
+                "pop_density": 429.06850667395787,
+                "mortality_rate": 285.0290315947208,
+                "pop_density_window": [
+                    343.2548053391663,
+                    514.8822080087494
+                ],
+                "mortality_rate_error_margins": [
+                    69.86687703222853,
+                    500.191186157213
+                ],
+                "n": 26
+            },
+            {
+                "pop_density": 471.97535734135374,
+                "mortality_rate": 277.2442352419516,
+                "pop_density_window": [
+                    377.58028587308297,
+                    566.3704288096244
+                ],
+                "mortality_rate_error_margins": [
+                    62.91019323860462,
+                    491.57827724529864
+                ],
+                "n": 23
+            },
+            {
+                "pop_density": 519.1728930754891,
+                "mortality_rate": 285.0077968051678,
+                "pop_density_window": [
+                    415.3383144603913,
+                    623.007471690587
+                ],
+                "mortality_rate_error_margins": [
+                    70.10045369193068,
+                    499.9151399184049
+                ],
+                "n": 25
+            },
+            {
+                "pop_density": 571.0901823830382,
+                "mortality_rate": 264.89002340405165,
+                "pop_density_window": [
+                    456.8721459064305,
+                    685.3082188596458
+                ],
+                "mortality_rate_error_margins": [
+                    82.25649292660609,
+                    447.5235538814972
+                ],
+                "n": 17
+            },
+            {
+                "pop_density": 628.1992006213419,
+                "mortality_rate": 270.076614041342,
+                "pop_density_window": [
+                    502.55936049707356,
+                    753.8390407456103
+                ],
+                "mortality_rate_error_margins": [
+                    98.2923589579637,
+                    441.8608691247203
+                ],
+                "n": 11
+            },
+            {
+                "pop_density": 691.0191206834761,
+                "mortality_rate": 263.10008126589884,
+                "pop_density_window": [
+                    552.8152965467809,
+                    829.2229448201714
+                ],
+                "mortality_rate_error_margins": [
+                    105.93232451469032,
+                    420.26783801710735
+                ],
+                "n": 11
+            },
+            {
+                "pop_density": 760.1210327518238,
+                "mortality_rate": 266.251667316669,
+                "pop_density_window": [
+                    608.0968262014591,
+                    912.1452393021887
+                ],
+                "mortality_rate_error_margins": [
+                    164.4345180508488,
+                    368.0688165824892
+                ],
+                "n": 8
             }
         ]
     },
@@ -149,39 +1153,796 @@
         "movingAverage": [
             {
                 "pop_density": 2.197079711800475,
-                "mortality_rate": 163.96510077856703
+                "mortality_rate": 163.96510077856703,
+                "pop_density_window": [
+                    1.75766376944038,
+                    2.63649565416057
+                ],
+                "mortality_rate_error_margins": [
+                    72.30365427695233,
+                    255.62654728018174
+                ],
+                "n": 4
             },
             {
                 "pop_density": 2.4167876829805226,
-                "mortality_rate": 134.10213894149453
+                "mortality_rate": 134.10213894149453,
+                "pop_density_window": [
+                    1.9334301463844181,
+                    2.9001452195766273
+                ],
+                "mortality_rate_error_margins": [
+                    62.67248531601065,
+                    205.53179256697842
+                ],
+                "n": 4
             },
             {
                 "pop_density": 2.658466451278575,
-                "mortality_rate": 258.77625556634524
+                "mortality_rate": 258.77625556634524,
+                "pop_density_window": [
+                    2.12677316102286,
+                    3.19015974153429
+                ],
+                "mortality_rate_error_margins": [
+                    -99.97856873749106,
+                    617.5310798701815
+                ],
+                "n": 6
             },
             {
                 "pop_density": 2.9243130964064328,
-                "mortality_rate": 227.66954597502502
+                "mortality_rate": 227.66954597502502,
+                "pop_density_window": [
+                    2.3394504771251463,
+                    3.5091757156877197
+                ],
+                "mortality_rate_error_margins": [
+                    -81.72259083827555,
+                    537.0616827883256
+                ],
+                "n": 9
             },
             {
                 "pop_density": 3.2167444060470762,
-                "mortality_rate": 272.7541387781317
+                "mortality_rate": 272.7541387781317,
+                "pop_density_window": [
+                    2.573395524837661,
+                    3.8600932872564915
+                ],
+                "mortality_rate_error_margins": [
+                    -44.53619952983985,
+                    590.0444770861031
+                ],
+                "n": 12
             },
             {
                 "pop_density": 3.5384188466517843,
-                "mortality_rate": 238.54333795564227
+                "mortality_rate": 238.54333795564227,
+                "pop_density_window": [
+                    2.8307350773214273,
+                    4.2461026159821404
+                ],
+                "mortality_rate_error_margins": [
+                    -86.39448995247264,
+                    563.4811658637572
+                ],
+                "n": 15
             },
             {
                 "pop_density": 3.892260731316963,
-                "mortality_rate": 211.41910080721752
+                "mortality_rate": 211.41910080721752,
+                "pop_density_window": [
+                    3.11380858505357,
+                    4.670712877580355
+                ],
+                "mortality_rate_error_margins": [
+                    -32.1937032626511,
+                    455.03190487708616
+                ],
+                "n": 15
             },
             {
                 "pop_density": 4.281486804448659,
-                "mortality_rate": 205.2899896229332
+                "mortality_rate": 205.2899896229332,
+                "pop_density_window": [
+                    3.4251894435589274,
+                    5.137784165338391
+                ],
+                "mortality_rate_error_margins": [
+                    -40.97795794700559,
+                    451.55793719287203
+                ],
+                "n": 15
             },
             {
                 "pop_density": 4.709635484893526,
-                "mortality_rate": 171.95981372491323
+                "mortality_rate": 171.95981372491323,
+                "pop_density_window": [
+                    3.7677083879148205,
+                    5.651562581872231
+                ],
+                "mortality_rate_error_margins": [
+                    3.992424933231831,
+                    339.92720251659466
+                ],
+                "n": 12
+            },
+            {
+                "pop_density": 5.180599033382879,
+                "mortality_rate": 232.8027977154304,
+                "pop_density_window": [
+                    4.144479226706303,
+                    6.216718840059455
+                ],
+                "mortality_rate_error_margins": [
+                    45.83609985244348,
+                    419.76949557841726
+                ],
+                "n": 16
+            },
+            {
+                "pop_density": 5.698658936721167,
+                "mortality_rate": 211.73496183591354,
+                "pop_density_window": [
+                    4.558927149376934,
+                    6.8383907240654
+                ],
+                "mortality_rate_error_margins": [
+                    21.57234698065352,
+                    401.8975766911735
+                ],
+                "n": 18
+            },
+            {
+                "pop_density": 6.268524830393284,
+                "mortality_rate": 200.98254384827828,
+                "pop_density_window": [
+                    5.014819864314627,
+                    7.52222979647194
+                ],
+                "mortality_rate_error_margins": [
+                    17.409506418633185,
+                    384.55558127792335
+                ],
+                "n": 21
+            },
+            {
+                "pop_density": 6.895377313432612,
+                "mortality_rate": 184.60230145372347,
+                "pop_density_window": [
+                    5.51630185074609,
+                    8.274452776119135
+                ],
+                "mortality_rate_error_margins": [
+                    -8.265263758696818,
+                    377.46986666614373
+                ],
+                "n": 28
+            },
+            {
+                "pop_density": 7.584915044775874,
+                "mortality_rate": 149.9837362814472,
+                "pop_density_window": [
+                    6.067932035820699,
+                    9.101898053731048
+                ],
+                "mortality_rate_error_margins": [
+                    11.911188536437464,
+                    288.0562840264569
+                ],
+                "n": 28
+            },
+            {
+                "pop_density": 8.343406549253462,
+                "mortality_rate": 166.65026373369022,
+                "pop_density_window": [
+                    6.67472523940277,
+                    10.012087859104156
+                ],
+                "mortality_rate_error_margins": [
+                    -36.7813101786644,
+                    370.08183764604485
+                ],
+                "n": 28
+            },
+            {
+                "pop_density": 9.17774720417881,
+                "mortality_rate": 161.8429916969679,
+                "pop_density_window": [
+                    7.342197763343048,
+                    11.013296645014572
+                ],
+                "mortality_rate_error_margins": [
+                    -39.508356578600115,
+                    363.19433997253594
+                ],
+                "n": 34
+            },
+            {
+                "pop_density": 10.09552192459669,
+                "mortality_rate": 162.20790165140704,
+                "pop_density_window": [
+                    8.076417539677353,
+                    12.11462630951603
+                ],
+                "mortality_rate_error_margins": [
+                    -40.694133330158735,
+                    365.1099366329728
+                ],
+                "n": 34
+            },
+            {
+                "pop_density": 11.105074117056361,
+                "mortality_rate": 168.14596099622807,
+                "pop_density_window": [
+                    8.88405929364509,
+                    13.326088940467635
+                ],
+                "mortality_rate_error_margins": [
+                    -52.87985524551095,
+                    389.1717772379671
+                ],
+                "n": 41
+            },
+            {
+                "pop_density": 12.215581528761998,
+                "mortality_rate": 166.41634746988115,
+                "pop_density_window": [
+                    9.772465223009599,
+                    14.658697834514399
+                ],
+                "mortality_rate_error_margins": [
+                    -29.338863030653698,
+                    362.17155797041596
+                ],
+                "n": 52
+            },
+            {
+                "pop_density": 13.4371396816382,
+                "mortality_rate": 179.68468377384508,
+                "pop_density_window": [
+                    10.74971174531056,
+                    16.124567617965837
+                ],
+                "mortality_rate_error_margins": [
+                    -108.55876979679707,
+                    467.92813734448725
+                ],
+                "n": 53
+            },
+            {
+                "pop_density": 14.780853649802022,
+                "mortality_rate": 193.03078968955762,
+                "pop_density_window": [
+                    11.824682919841617,
+                    17.737024379762424
+                ],
+                "mortality_rate_error_margins": [
+                    -133.29831613825272,
+                    519.3598955173679
+                ],
+                "n": 67
+            },
+            {
+                "pop_density": 16.258939014782225,
+                "mortality_rate": 202.25773957037927,
+                "pop_density_window": [
+                    13.00715121182578,
+                    19.51072681773867
+                ],
+                "mortality_rate_error_margins": [
+                    -138.2075976953589,
+                    542.7230768361175
+                ],
+                "n": 61
+            },
+            {
+                "pop_density": 17.88483291626045,
+                "mortality_rate": 205.91745600939674,
+                "pop_density_window": [
+                    14.30786633300836,
+                    21.461799499512537
+                ],
+                "mortality_rate_error_margins": [
+                    -136.8546687758274,
+                    548.689580794621
+                ],
+                "n": 60
+            },
+            {
+                "pop_density": 19.673316207886494,
+                "mortality_rate": 201.9440523313324,
+                "pop_density_window": [
+                    15.738652966309196,
+                    23.607979449463794
+                ],
+                "mortality_rate_error_margins": [
+                    -108.21392489343799,
+                    512.1020295561027
+                ],
+                "n": 54
+            },
+            {
+                "pop_density": 21.640647828675146,
+                "mortality_rate": 200.33241168965552,
+                "pop_density_window": [
+                    17.312518262940117,
+                    25.968777394410175
+                ],
+                "mortality_rate_error_margins": [
+                    -81.42742153447111,
+                    482.0922449137821
+                ],
+                "n": 51
+            },
+            {
+                "pop_density": 23.804712611542662,
+                "mortality_rate": 217.65638589015055,
+                "pop_density_window": [
+                    19.04377008923413,
+                    28.565655133851195
+                ],
+                "mortality_rate_error_margins": [
+                    -56.79349943086646,
+                    492.10627121116755
+                ],
+                "n": 52
+            },
+            {
+                "pop_density": 26.185183872696932,
+                "mortality_rate": 235.9143374117609,
+                "pop_density_window": [
+                    20.948147098157545,
+                    31.422220647236315
+                ],
+                "mortality_rate_error_margins": [
+                    -145.12106648851042,
+                    616.9497413120322
+                ],
+                "n": 51
+            },
+            {
+                "pop_density": 28.803702259966627,
+                "mortality_rate": 240.43620285698609,
+                "pop_density_window": [
+                    23.042961807973303,
+                    34.564442711959956
+                ],
+                "mortality_rate_error_margins": [
+                    -151.40815059383408,
+                    632.2805563078063
+                ],
+                "n": 53
+            },
+            {
+                "pop_density": 31.684072485963295,
+                "mortality_rate": 252.31938588519603,
+                "pop_density_window": [
+                    25.347257988770636,
+                    38.020886983155954
+                ],
+                "mortality_rate_error_margins": [
+                    -158.87666075220943,
+                    663.5154325226015
+                ],
+                "n": 47
+            },
+            {
+                "pop_density": 34.85247973455963,
+                "mortality_rate": 218.57789624926212,
+                "pop_density_window": [
+                    27.8819837876477,
+                    41.822975681471554
+                ],
+                "mortality_rate_error_margins": [
+                    -207.75643784673454,
+                    644.9122303452588
+                ],
+                "n": 42
+            },
+            {
+                "pop_density": 38.33772770801559,
+                "mortality_rate": 213.99209162796154,
+                "pop_density_window": [
+                    30.670182166412474,
+                    46.00527324961871
+                ],
+                "mortality_rate_error_margins": [
+                    -198.26962437883714,
+                    626.2538076347603
+                ],
+                "n": 37
+            },
+            {
+                "pop_density": 42.17150047881716,
+                "mortality_rate": 158.52198539061533,
+                "pop_density_window": [
+                    33.737200383053725,
+                    50.605800574580584
+                ],
+                "mortality_rate_error_margins": [
+                    -95.52589078909776,
+                    412.5698615703284
+                ],
+                "n": 33
+            },
+            {
+                "pop_density": 46.38865052669888,
+                "mortality_rate": 231.60769887130837,
+                "pop_density_window": [
+                    37.110920421359104,
+                    55.66638063203865
+                ],
+                "mortality_rate_error_margins": [
+                    -731.2608836639989,
+                    1194.4762814066157
+                ],
+                "n": 39
+            },
+            {
+                "pop_density": 51.027515579368774,
+                "mortality_rate": 254.66653934324208,
+                "pop_density_window": [
+                    40.82201246349502,
+                    61.233018695242535
+                ],
+                "mortality_rate_error_margins": [
+                    -759.3874778990804,
+                    1268.7205565855645
+                ],
+                "n": 36
+            },
+            {
+                "pop_density": 56.13026713730566,
+                "mortality_rate": 284.0964293225817,
+                "pop_density_window": [
+                    44.90421370984453,
+                    67.35632056476679
+                ],
+                "mortality_rate_error_margins": [
+                    -729.3511267914542,
+                    1297.5439854366177
+                ],
+                "n": 35
+            },
+            {
+                "pop_density": 61.74329385103623,
+                "mortality_rate": 328.6186530502263,
+                "pop_density_window": [
+                    49.394635080828984,
+                    74.09195262124348
+                ],
+                "mortality_rate_error_margins": [
+                    -695.7815694260132,
+                    1353.018875526466
+                ],
+                "n": 34
+            },
+            {
+                "pop_density": 67.91762323613986,
+                "mortality_rate": 278.43033078127917,
+                "pop_density_window": [
+                    54.334098588911885,
+                    81.50114788336782
+                ],
+                "mortality_rate_error_margins": [
+                    -67.23036055486443,
+                    624.0910221174228
+                ],
+                "n": 31
+            },
+            {
+                "pop_density": 74.70938555975385,
+                "mortality_rate": 292.1385719968004,
+                "pop_density_window": [
+                    59.76750844780308,
+                    89.65126267170461
+                ],
+                "mortality_rate_error_margins": [
+                    -40.319355687296365,
+                    624.5964996808972
+                ],
+                "n": 31
+            },
+            {
+                "pop_density": 82.18032411572923,
+                "mortality_rate": 298.69984657347925,
+                "pop_density_window": [
+                    65.7442592925834,
+                    98.61638893887509
+                ],
+                "mortality_rate_error_margins": [
+                    3.620220520142425,
+                    593.7794726268161
+                ],
+                "n": 28
+            },
+            {
+                "pop_density": 90.39835652730217,
+                "mortality_rate": 307.36031234051825,
+                "pop_density_window": [
+                    72.31868522184173,
+                    108.47802783276259
+                ],
+                "mortality_rate_error_margins": [
+                    -1.5076304428383196,
+                    616.2282551238748
+                ],
+                "n": 30
+            },
+            {
+                "pop_density": 99.4381921800324,
+                "mortality_rate": 312.63938669663344,
+                "pop_density_window": [
+                    79.55055374402592,
+                    119.32583061603887
+                ],
+                "mortality_rate_error_margins": [
+                    64.42750586911106,
+                    560.8512675241558
+                ],
+                "n": 20
+            },
+            {
+                "pop_density": 109.38201139803566,
+                "mortality_rate": 321.5483871699542,
+                "pop_density_window": [
+                    87.50560911842852,
+                    131.25841367764278
+                ],
+                "mortality_rate_error_margins": [
+                    11.342153724584364,
+                    631.754620615324
+                ],
+                "n": 19
+            },
+            {
+                "pop_density": 120.32021253783923,
+                "mortality_rate": 281.9974330884404,
+                "pop_density_window": [
+                    96.25617003027138,
+                    144.38425504540706
+                ],
+                "mortality_rate_error_margins": [
+                    -16.813338421002527,
+                    580.8082045978833
+                ],
+                "n": 16
+            },
+            {
+                "pop_density": 132.35223379162315,
+                "mortality_rate": 272.7797252994395,
+                "pop_density_window": [
+                    105.88178703329852,
+                    158.8226805499478
+                ],
+                "mortality_rate_error_margins": [
+                    0.6806306863035161,
+                    544.8788199125755
+                ],
+                "n": 20
+            },
+            {
+                "pop_density": 145.58745717078548,
+                "mortality_rate": 245.89087249097756,
+                "pop_density_window": [
+                    116.46996573662838,
+                    174.70494860494256
+                ],
+                "mortality_rate_error_margins": [
+                    11.952331200148308,
+                    479.8294137818068
+                ],
+                "n": 17
+            },
+            {
+                "pop_density": 160.14620288786404,
+                "mortality_rate": 237.61025130998976,
+                "pop_density_window": [
+                    128.11696231029123,
+                    192.17544346543684
+                ],
+                "mortality_rate_error_margins": [
+                    81.76274745020385,
+                    393.4577551697757
+                ],
+                "n": 22
+            },
+            {
+                "pop_density": 176.16082317665047,
+                "mortality_rate": 240.45043473496816,
+                "pop_density_window": [
+                    140.92865854132037,
+                    211.39298781198056
+                ],
+                "mortality_rate_error_margins": [
+                    1.2858394329371094,
+                    479.6150300369992
+                ],
+                "n": 23
+            },
+            {
+                "pop_density": 193.7769054943155,
+                "mortality_rate": 241.01224169685386,
+                "pop_density_window": [
+                    155.02152439545242,
+                    232.53228659317864
+                ],
+                "mortality_rate_error_margins": [
+                    -12.373652013068437,
+                    494.3981354067762
+                ],
+                "n": 22
+            },
+            {
+                "pop_density": 213.1545960437471,
+                "mortality_rate": 288.83634341591784,
+                "pop_density_window": [
+                    170.52367683499767,
+                    255.7855152524965
+                ],
+                "mortality_rate_error_margins": [
+                    -69.24807094643717,
+                    646.9207577782729
+                ],
+                "n": 24
+            },
+            {
+                "pop_density": 234.47005564812184,
+                "mortality_rate": 290.1146036950995,
+                "pop_density_window": [
+                    187.57604451849747,
+                    281.3640667777462
+                ],
+                "mortality_rate_error_margins": [
+                    -61.11899078707762,
+                    641.3481981772766
+                ],
+                "n": 24
+            },
+            {
+                "pop_density": 257.9170612129341,
+                "mortality_rate": 310.8977341234404,
+                "pop_density_window": [
+                    206.33364897034724,
+                    309.5004734555209
+                ],
+                "mortality_rate_error_margins": [
+                    -47.42049827109082,
+                    669.2159665179715
+                ],
+                "n": 15
+            },
+            {
+                "pop_density": 283.70876733422745,
+                "mortality_rate": 324.3438531197118,
+                "pop_density_window": [
+                    226.96701386738198,
+                    340.45052080107297
+                ],
+                "mortality_rate_error_margins": [
+                    -59.92792139562607,
+                    708.6156276350497
+                ],
+                "n": 12
+            },
+            {
+                "pop_density": 312.07964406765024,
+                "mortality_rate": 267.4099246204428,
+                "pop_density_window": [
+                    249.6637152541202,
+                    374.4955728811803
+                ],
+                "mortality_rate_error_margins": [
+                    47.19012909398006,
+                    487.62972014690547
+                ],
+                "n": 9
+            },
+            {
+                "pop_density": 343.28760847441526,
+                "mortality_rate": 311.39747947008436,
+                "pop_density_window": [
+                    274.63008677953223,
+                    411.94513016929835
+                ],
+                "mortality_rate_error_margins": [
+                    39.655498997712414,
+                    583.1394599424564
+                ],
+                "n": 8
+            },
+            {
+                "pop_density": 377.6163693218569,
+                "mortality_rate": 343.1250910466941,
+                "pop_density_window": [
+                    302.0930954574855,
+                    453.1396431862282
+                ],
+                "mortality_rate_error_margins": [
+                    56.17378337138001,
+                    630.0763987220082
+                ],
+                "n": 6
+            },
+            {
+                "pop_density": 415.3780062540426,
+                "mortality_rate": 371.0579448172734,
+                "pop_density_window": [
+                    332.30240500323407,
+                    498.4536075048511
+                ],
+                "mortality_rate_error_margins": [
+                    88.06783916436933,
+                    654.0480504701775
+                ],
+                "n": 5
+            },
+            {
+                "pop_density": 456.91580687944685,
+                "mortality_rate": 333.7822622108936,
+                "pop_density_window": [
+                    365.5326455035575,
+                    548.2989682553363
+                ],
+                "mortality_rate_error_margins": [
+                    64.86829902495003,
+                    602.6962253968371
+                ],
+                "n": 4
+            },
+            {
+                "pop_density": 502.6073875673916,
+                "mortality_rate": 408.24514620725193,
+                "pop_density_window": [
+                    402.08591005391327,
+                    603.1288650808699
+                ],
+                "mortality_rate_error_margins": [
+                    240.11253483347585,
+                    576.377757581028
+                ],
+                "n": 3
+            },
+            {
+                "pop_density": 552.8681263241308,
+                "mortality_rate": 295.0181642646624,
+                "pop_density_window": [
+                    442.29450105930465,
+                    663.441751588957
+                ],
+                "mortality_rate_error_margins": [
+                    279.52019843702845,
+                    310.51613009229635
+                ],
+                "n": 3
+            },
+            {
+                "pop_density": 608.1549389565439,
+                "mortality_rate": 274.6189663303346,
+                "pop_density_window": [
+                    486.52395116523513,
+                    729.7859267478527
+                ],
+                "mortality_rate_error_margins": [
+                    202.69075541860332,
+                    346.5471772420659
+                ],
+                "n": 4
+            },
+            {
+                "pop_density": 668.9704328521984,
+                "mortality_rate": 238.43578728552907,
+                "pop_density_window": [
+                    535.1763462817587,
+                    802.764519422638
+                ],
+                "mortality_rate_error_margins": [
+                    101.27163348355984,
+                    375.59994108749834
+                ],
+                "n": 6
             }
         ]
     },
@@ -190,155 +1951,1199 @@
         "movingAverage": [
             {
                 "pop_density": 0.1321810267613325,
-                "mortality_rate": 917.4311926605504
+                "mortality_rate": 917.4311926605504,
+                "pop_density_window": [
+                    0.105744821409066,
+                    0.15861723211359902
+                ],
+                "mortality_rate_error_margins": [
+                    917.4311926605504,
+                    917.4311926605504
+                ],
+                "n": 1
             },
             {
                 "pop_density": 0.14539912943746577,
-                "mortality_rate": 491.8032786885246
+                "mortality_rate": 491.8032786885246,
+                "pop_density_window": [
+                    0.11631930354997262,
+                    0.17447895532495894
+                ],
+                "mortality_rate_error_margins": [
+                    491.8032786885246,
+                    491.8032786885246
+                ],
+                "n": 1
             },
             {
                 "pop_density": 0.15993904238121237,
-                "mortality_rate": 332.8749675236206
+                "mortality_rate": 332.8749675236206,
+                "pop_density_window": [
+                    0.1279512339049699,
+                    0.19192685085745487
+                ],
+                "mortality_rate_error_margins": [
+                    15.018345193812706,
+                    650.7315898534285
+                ],
+                "n": 2
             },
             {
                 "pop_density": 0.17593294661933365,
-                "mortality_rate": 306.68635397307963
+                "mortality_rate": 306.68635397307963,
+                "pop_density_window": [
+                    0.14074635729546692,
+                    0.21111953594320038
+                ],
+                "mortality_rate_error_margins": [
+                    36.79383942292384,
+                    576.5788685232354
+                ],
+                "n": 3
             },
             {
                 "pop_density": 0.19352624128126703,
-                "mortality_rate": 306.68635397307963
+                "mortality_rate": 306.68635397307963,
+                "pop_density_window": [
+                    0.15482099302501362,
+                    0.23223148953752043
+                ],
+                "mortality_rate_error_margins": [
+                    36.79383942292384,
+                    576.5788685232354
+                ],
+                "n": 3
             },
             {
                 "pop_density": 0.21287886540939377,
-                "mortality_rate": 214.1278916153572
+                "mortality_rate": 214.1278916153572,
+                "pop_density_window": [
+                    0.170303092327515,
+                    0.2554546384912725
+                ],
+                "mortality_rate_error_margins": [
+                    133.76542110207615,
+                    294.49036212863825
+                ],
+                "n": 2
             },
             {
                 "pop_density": 0.23416675195033315,
-                "mortality_rate": 221.1507471495851
+                "mortality_rate": 221.1507471495851,
+                "pop_density_window": [
+                    0.1873334015602665,
+                    0.28100010234039974
+                ],
+                "mortality_rate_error_margins": [
+                    152.59433405178854,
+                    289.7071602473817
+                ],
+                "n": 3
             },
             {
                 "pop_density": 0.2575834271453665,
-                "mortality_rate": 235.19645821804096
+                "mortality_rate": 235.19645821804096,
+                "pop_density_window": [
+                    0.2060667417162932,
+                    0.3091001125744398
+                ],
+                "mortality_rate_error_margins": [
+                    235.19645821804096,
+                    235.19645821804096
+                ],
+                "n": 1
             },
             {
                 "pop_density": 0.28334176985990317,
-                "mortality_rate": 235.19645821804096
+                "mortality_rate": 235.19645821804096,
+                "pop_density_window": [
+                    0.22667341588792253,
+                    0.3400101238318838
+                ],
+                "mortality_rate_error_margins": [
+                    235.19645821804096,
+                    235.19645821804096
+                ],
+                "n": 1
             },
             {
                 "pop_density": 0.3116759468458935,
-                "mortality_rate": 498.1698349006074
+                "mortality_rate": 498.1698349006074,
+                "pop_density_window": [
+                    0.2493407574767148,
+                    0.3740111362150722
+                ],
+                "mortality_rate_error_margins": [
+                    -345.7461461667822,
+                    1342.085815967997
+                ],
+                "n": 3
             },
             {
                 "pop_density": 0.34284354153048285,
-                "mortality_rate": 412.7850510797368
+                "mortality_rate": 412.7850510797368,
+                "pop_density_window": [
+                    0.2742748332243863,
+                    0.4114122498365794
+                ],
+                "mortality_rate_error_margins": [
+                    -375.6516128466324,
+                    1201.221715006106
+                ],
+                "n": 4
             },
             {
                 "pop_density": 0.37712789568353117,
-                "mortality_rate": 330.9427754276868
+                "mortality_rate": 330.9427754276868,
+                "pop_density_window": [
+                    0.30170231654682494,
+                    0.45255347482023744
+                ],
+                "mortality_rate_error_margins": [
+                    -325.4285081533286,
+                    987.3140590087022
+                ],
+                "n": 7
             },
             {
                 "pop_density": 0.41484068525188433,
-                "mortality_rate": 314.8671946862763
+                "mortality_rate": 314.8671946862763,
+                "pop_density_window": [
+                    0.33187254820150747,
+                    0.4978088223022612
+                ],
+                "mortality_rate_error_margins": [
+                    -304.97652308775025,
+                    934.7109124603029
+                ],
+                "n": 8
             },
             {
                 "pop_density": 0.4563247537770728,
-                "mortality_rate": 209.7466923176974
+                "mortality_rate": 209.7466923176974,
+                "pop_density_window": [
+                    0.36505980302165825,
+                    0.5475897045324873
+                ],
+                "mortality_rate_error_margins": [
+                    12.864897141395602,
+                    406.6284874939992
+                ],
+                "n": 8
             },
             {
                 "pop_density": 0.5019572291547801,
-                "mortality_rate": 214.70078831378402
+                "mortality_rate": 214.70078831378402,
+                "pop_density_window": [
+                    0.4015657833238241,
+                    0.6023486749857361
+                ],
+                "mortality_rate_error_margins": [
+                    20.520327361834063,
+                    408.88124926573397
+                ],
+                "n": 8
             },
             {
                 "pop_density": 0.5521529520702582,
-                "mortality_rate": 283.1590110168445
+                "mortality_rate": 283.1590110168445,
+                "pop_density_window": [
+                    0.44172236165620654,
+                    0.6625835424843098
+                ],
+                "mortality_rate_error_margins": [
+                    26.106683627224925,
+                    540.211338406464
+                ],
+                "n": 6
             },
             {
                 "pop_density": 0.6073682472772841,
-                "mortality_rate": 236.71844584658132
+                "mortality_rate": 236.71844584658132,
+                "pop_density_window": [
+                    0.48589459782182726,
+                    0.7288418967327409
+                ],
+                "mortality_rate_error_margins": [
+                    12.974848275871665,
+                    460.46204341729094
+                ],
+                "n": 6
             },
             {
                 "pop_density": 0.6681050720050126,
-                "mortality_rate": 209.40208810128624
+                "mortality_rate": 209.40208810128624,
+                "pop_density_window": [
+                    0.5344840576040101,
+                    0.8017260864060152
+                ],
+                "mortality_rate_error_margins": [
+                    9.422660921201953,
+                    409.3815152813705
+                ],
+                "n": 9
             },
             {
                 "pop_density": 0.734915579205514,
-                "mortality_rate": 185.309850974464
+                "mortality_rate": 185.309850974464,
+                "pop_density_window": [
+                    0.5879324633644112,
+                    0.8818986950466168
+                ],
+                "mortality_rate_error_margins": [
+                    -11.133937814131372,
+                    381.75363976305937
+                ],
+                "n": 10
             },
             {
                 "pop_density": 0.8084071371260654,
-                "mortality_rate": 154.69066438472004
+                "mortality_rate": 154.69066438472004,
+                "pop_density_window": [
+                    0.6467257097008523,
+                    0.9700885645512785
+                ],
+                "mortality_rate_error_margins": [
+                    91.91238784208662,
+                    217.46894092735346
+                ],
+                "n": 10
             },
             {
                 "pop_density": 0.889247850838672,
-                "mortality_rate": 183.3301037891613
+                "mortality_rate": 183.3301037891613,
+                "pop_density_window": [
+                    0.7113982806709376,
+                    1.0670974210064064
+                ],
+                "mortality_rate_error_margins": [
+                    4.726925647069805,
+                    361.93328193125285
+                ],
+                "n": 11
             },
             {
                 "pop_density": 0.9781726359225393,
-                "mortality_rate": 169.3120089917862
+                "mortality_rate": 169.3120089917862,
+                "pop_density_window": [
+                    0.7825381087380314,
+                    1.173807163107047
+                ],
+                "mortality_rate_error_margins": [
+                    -24.89968979448841,
+                    363.52370777806084
+                ],
+                "n": 11
             },
             {
                 "pop_density": 1.0759898995147934,
-                "mortality_rate": 208.08287080564094
+                "mortality_rate": 208.08287080564094,
+                "pop_density_window": [
+                    0.8607919196118347,
+                    1.291187879417752
+                ],
+                "mortality_rate_error_margins": [
+                    -25.717414915012682,
+                    441.88315652629456
+                ],
+                "n": 13
             },
             {
                 "pop_density": 1.1835888894662727,
-                "mortality_rate": 209.70367105308912
+                "mortality_rate": 209.70367105308912,
+                "pop_density_window": [
+                    0.9468711115730182,
+                    1.4203066673595273
+                ],
+                "mortality_rate_error_margins": [
+                    -31.891753253802364,
+                    451.2990953599806
+                ],
+                "n": 12
             },
             {
                 "pop_density": 1.3019477784129,
-                "mortality_rate": 211.580356013168
+                "mortality_rate": 211.580356013168,
+                "pop_density_window": [
+                    1.0415582227303202,
+                    1.5623373340954803
+                ],
+                "mortality_rate_error_margins": [
+                    -39.90126076533352,
+                    463.0619727916695
+                ],
+                "n": 14
             },
             {
                 "pop_density": 1.4321425562541903,
-                "mortality_rate": 212.22923160904097
+                "mortality_rate": 212.22923160904097,
+                "pop_density_window": [
+                    1.1457140450033523,
+                    1.7185710675050285
+                ],
+                "mortality_rate_error_margins": [
+                    -36.22306250658784,
+                    460.68152572466977
+                ],
+                "n": 17
             },
             {
                 "pop_density": 1.5753568118796095,
-                "mortality_rate": 196.9196225603574
+                "mortality_rate": 196.9196225603574,
+                "pop_density_window": [
+                    1.2602854495036877,
+                    1.8904281742555316
+                ],
+                "mortality_rate_error_margins": [
+                    -41.62938525612947,
+                    435.46863037684426
+                ],
+                "n": 17
             },
             {
                 "pop_density": 1.7328924930675706,
-                "mortality_rate": 191.24652560785663
+                "mortality_rate": 191.24652560785663,
+                "pop_density_window": [
+                    1.3863139944540566,
+                    2.079470991681085
+                ],
+                "mortality_rate_error_margins": [
+                    -62.52948157916964,
+                    445.02253279488286
+                ],
+                "n": 19
             },
             {
                 "pop_density": 1.906181742374328,
-                "mortality_rate": 170.59006857632485
+                "mortality_rate": 170.59006857632485,
+                "pop_density_window": [
+                    1.5249453938994624,
+                    2.2874180908491937
+                ],
+                "mortality_rate_error_margins": [
+                    -47.52091851856699,
+                    388.7010556712167
+                ],
+                "n": 19
             },
             {
                 "pop_density": 2.096799916611761,
-                "mortality_rate": 166.49778940603153
+                "mortality_rate": 166.49778940603153,
+                "pop_density_window": [
+                    1.6774399332894088,
+                    2.516159899934113
+                ],
+                "mortality_rate_error_margins": [
+                    -35.56715133711765,
+                    368.5627301491807
+                ],
+                "n": 18
             },
             {
                 "pop_density": 2.3064799082729373,
-                "mortality_rate": 164.9547935412259
+                "mortality_rate": 164.9547935412259,
+                "pop_density_window": [
+                    1.8451839266183498,
+                    2.767775889927525
+                ],
+                "mortality_rate_error_margins": [
+                    -22.05303112352209,
+                    351.9626182059739
+                ],
+                "n": 20
             },
             {
                 "pop_density": 2.537127899100231,
-                "mortality_rate": 158.23757745083313
+                "mortality_rate": 158.23757745083313,
+                "pop_density_window": [
+                    2.029702319280185,
+                    3.0445534789202773
+                ],
+                "mortality_rate_error_margins": [
+                    -9.230195066886239,
+                    325.70534996855247
+                ],
+                "n": 21
             },
             {
                 "pop_density": 2.7908406890102544,
-                "mortality_rate": 146.7476759061676
+                "mortality_rate": 146.7476759061676,
+                "pop_density_window": [
+                    2.2326725512082035,
+                    3.3490088268123053
+                ],
+                "mortality_rate_error_margins": [
+                    10.346944884665447,
+                    283.1484069276697
+                ],
+                "n": 24
             },
             {
                 "pop_density": 3.06992475791128,
-                "mortality_rate": 147.7083851594243
+                "mortality_rate": 147.7083851594243,
+                "pop_density_window": [
+                    2.455939806329024,
+                    3.683909709493536
+                ],
+                "mortality_rate_error_margins": [
+                    9.004019257835807,
+                    286.4127510610128
+                ],
+                "n": 23
             },
             {
                 "pop_density": 3.376917233702408,
-                "mortality_rate": 144.61307590721597
+                "mortality_rate": 144.61307590721597,
+                "pop_density_window": [
+                    2.7015337869619263,
+                    4.052300680442889
+                ],
+                "mortality_rate_error_margins": [
+                    4.028382710671622,
+                    285.1977691037603
+                ],
+                "n": 26
             },
             {
                 "pop_density": 3.714608957072649,
-                "mortality_rate": 156.8392948501895
+                "mortality_rate": 156.8392948501895,
+                "pop_density_window": [
+                    2.971687165658119,
+                    4.457530748487178
+                ],
+                "mortality_rate_error_margins": [
+                    3.2105417333880837,
+                    310.4680479669909
+                ],
+                "n": 27
             },
             {
                 "pop_density": 4.0860698527799135,
-                "mortality_rate": 157.78445912351648
+                "mortality_rate": 157.78445912351648,
+                "pop_density_window": [
+                    3.268855882223931,
+                    4.903283823335896
+                ],
+                "mortality_rate_error_margins": [
+                    -9.43046681400861,
+                    324.9993850610416
+                ],
+                "n": 26
             },
             {
                 "pop_density": 4.494676838057906,
-                "mortality_rate": 144.13469984668782
+                "mortality_rate": 144.13469984668782,
+                "pop_density_window": [
+                    3.5957414704463244,
+                    5.393612205669487
+                ],
+                "mortality_rate_error_margins": [
+                    -20.96188328838761,
+                    309.23128298176323
+                ],
+                "n": 30
+            },
+            {
+                "pop_density": 4.944144521863697,
+                "mortality_rate": 157.0605312006902,
+                "pop_density_window": [
+                    3.955315617490957,
+                    5.932973426236436
+                ],
+                "mortality_rate_error_margins": [
+                    -23.785493232622827,
+                    337.9065556340032
+                ],
+                "n": 29
+            },
+            {
+                "pop_density": 5.438558974050066,
+                "mortality_rate": 160.068338211675,
+                "pop_density_window": [
+                    4.350847179240053,
+                    6.52627076886008
+                ],
+                "mortality_rate_error_margins": [
+                    -19.24379432082162,
+                    339.38047074417165
+                ],
+                "n": 29
+            },
+            {
+                "pop_density": 5.982414871455073,
+                "mortality_rate": 165.04359001169632,
+                "pop_density_window": [
+                    4.785931897164058,
+                    7.1788978457460875
+                ],
+                "mortality_rate_error_margins": [
+                    1.1543572573494316,
+                    328.9328227660432
+                ],
+                "n": 36
+            },
+            {
+                "pop_density": 6.580656358600581,
+                "mortality_rate": 175.48984942338822,
+                "pop_density_window": [
+                    5.2645250868804645,
+                    7.896787630320697
+                ],
+                "mortality_rate_error_margins": [
+                    24.86610047687367,
+                    326.1135983699028
+                ],
+                "n": 40
+            },
+            {
+                "pop_density": 7.23872199446064,
+                "mortality_rate": 174.09572950570995,
+                "pop_density_window": [
+                    5.790977595568512,
+                    8.686466393352767
+                ],
+                "mortality_rate_error_margins": [
+                    28.571578493282317,
+                    319.6198805181376
+                ],
+                "n": 42
+            },
+            {
+                "pop_density": 7.962594193906705,
+                "mortality_rate": 172.34331858920817,
+                "pop_density_window": [
+                    6.370075355125364,
+                    9.555113032688045
+                ],
+                "mortality_rate_error_margins": [
+                    0.193511974919943,
+                    344.4931252034964
+                ],
+                "n": 54
+            },
+            {
+                "pop_density": 8.758853613297376,
+                "mortality_rate": 173.12923852601097,
+                "pop_density_window": [
+                    7.007082890637901,
+                    10.510624335956852
+                ],
+                "mortality_rate_error_margins": [
+                    2.1259355234372492,
+                    344.1325415285847
+                ],
+                "n": 58
+            },
+            {
+                "pop_density": 9.634738974627114,
+                "mortality_rate": 161.73600999117738,
+                "pop_density_window": [
+                    7.707791179701691,
+                    11.561686769552537
+                ],
+                "mortality_rate_error_margins": [
+                    -9.069656535151069,
+                    332.54167651750583
+                ],
+                "n": 61
+            },
+            {
+                "pop_density": 10.598212872089828,
+                "mortality_rate": 156.1002739407152,
+                "pop_density_window": [
+                    8.478570297671862,
+                    12.717855446507793
+                ],
+                "mortality_rate_error_margins": [
+                    -11.828280212539454,
+                    324.0288280939699
+                ],
+                "n": 68
+            },
+            {
+                "pop_density": 11.658034159298811,
+                "mortality_rate": 155.62244036756988,
+                "pop_density_window": [
+                    9.326427327439049,
+                    13.989640991158574
+                ],
+                "mortality_rate_error_margins": [
+                    -6.871251882537166,
+                    318.11613261767695
+                ],
+                "n": 63
+            },
+            {
+                "pop_density": 12.823837575228694,
+                "mortality_rate": 148.4260204124632,
+                "pop_density_window": [
+                    10.259070060182955,
+                    15.388605090274432
+                ],
+                "mortality_rate_error_margins": [
+                    -15.174027283991052,
+                    312.02606810891746
+                ],
+                "n": 63
+            },
+            {
+                "pop_density": 14.106221332751565,
+                "mortality_rate": 144.50712642695063,
+                "pop_density_window": [
+                    11.284977066201252,
+                    16.92746559930188
+                ],
+                "mortality_rate_error_margins": [
+                    -21.669647259925853,
+                    310.6839001138271
+                ],
+                "n": 73
+            },
+            {
+                "pop_density": 15.516843466026721,
+                "mortality_rate": 150.33004503242438,
+                "pop_density_window": [
+                    12.413474772821377,
+                    18.620212159232068
+                ],
+                "mortality_rate_error_margins": [
+                    -38.3015080677759,
+                    338.96159813262466
+                ],
+                "n": 80
+            },
+            {
+                "pop_density": 17.068527812629394,
+                "mortality_rate": 146.89876271622066,
+                "pop_density_window": [
+                    13.654822250103516,
+                    20.482233375155275
+                ],
+                "mortality_rate_error_margins": [
+                    -29.412703021608223,
+                    323.21022845404957
+                ],
+                "n": 83
+            },
+            {
+                "pop_density": 18.775380593892336,
+                "mortality_rate": 140.06770424617636,
+                "pop_density_window": [
+                    15.02030447511387,
+                    22.530456712670805
+                ],
+                "mortality_rate_error_margins": [
+                    -38.74939207691,
+                    318.8848005692627
+                ],
+                "n": 83
+            },
+            {
+                "pop_density": 20.652918653281574,
+                "mortality_rate": 147.81967943188837,
+                "pop_density_window": [
+                    16.52233492262526,
+                    24.783502383937886
+                ],
+                "mortality_rate_error_margins": [
+                    -37.88417167895824,
+                    333.523530542735
+                ],
+                "n": 87
+            },
+            {
+                "pop_density": 22.718210518609734,
+                "mortality_rate": 154.02781916512257,
+                "pop_density_window": [
+                    18.174568414887787,
+                    27.26185262233168
+                ],
+                "mortality_rate_error_margins": [
+                    -46.58578127434612,
+                    354.64141960459125
+                ],
+                "n": 70
+            },
+            {
+                "pop_density": 24.99003157047071,
+                "mortality_rate": 157.20406628502758,
+                "pop_density_window": [
+                    19.992025256376568,
+                    29.988037884564854
+                ],
+                "mortality_rate_error_margins": [
+                    -41.94387692711561,
+                    356.3520094971708
+                ],
+                "n": 81
+            },
+            {
+                "pop_density": 27.489034727517783,
+                "mortality_rate": 159.9920706213798,
+                "pop_density_window": [
+                    21.991227782014228,
+                    32.986841673021345
+                ],
+                "mortality_rate_error_margins": [
+                    -48.199543653272,
+                    368.18368489603165
+                ],
+                "n": 84
+            },
+            {
+                "pop_density": 30.237938200269564,
+                "mortality_rate": 158.25667867129766,
+                "pop_density_window": [
+                    24.190350560215652,
+                    36.28552584032348
+                ],
+                "mortality_rate_error_margins": [
+                    -52.60480531926805,
+                    369.1181626618634
+                ],
+                "n": 72
+            },
+            {
+                "pop_density": 33.26173202029652,
+                "mortality_rate": 158.7328298167887,
+                "pop_density_window": [
+                    26.60938561623722,
+                    39.91407842435583
+                ],
+                "mortality_rate_error_margins": [
+                    -38.69107815484523,
+                    356.1567377884226
+                ],
+                "n": 76
+            },
+            {
+                "pop_density": 36.58790522232618,
+                "mortality_rate": 151.6081127731102,
+                "pop_density_window": [
+                    29.270324177860942,
+                    43.905486266791414
+                ],
+                "mortality_rate_error_margins": [
+                    -40.69456065004803,
+                    343.9107861962684
+                ],
+                "n": 74
+            },
+            {
+                "pop_density": 40.24669574455879,
+                "mortality_rate": 161.0770371464816,
+                "pop_density_window": [
+                    32.19735659564704,
+                    48.296034893470555
+                ],
+                "mortality_rate_error_margins": [
+                    -23.571386729514018,
+                    345.7254610224772
+                ],
+                "n": 60
+            },
+            {
+                "pop_density": 44.27136531901468,
+                "mortality_rate": 161.8920462363742,
+                "pop_density_window": [
+                    35.41709225521174,
+                    53.12563838281761
+                ],
+                "mortality_rate_error_margins": [
+                    -21.216321038103416,
+                    345.0004135108518
+                ],
+                "n": 59
+            },
+            {
+                "pop_density": 48.698501850916145,
+                "mortality_rate": 145.35720139364452,
+                "pop_density_window": [
+                    38.958801480732916,
+                    58.438202221099374
+                ],
+                "mortality_rate_error_margins": [
+                    -23.837387362425375,
+                    314.5517901497144
+                ],
+                "n": 57
+            },
+            {
+                "pop_density": 53.56835203600777,
+                "mortality_rate": 158.2470334907513,
+                "pop_density_window": [
+                    42.85468162880621,
+                    64.28202244320931
+                ],
+                "mortality_rate_error_margins": [
+                    -4.786999322176001,
+                    321.2810663036786
+                ],
+                "n": 40
+            },
+            {
+                "pop_density": 58.92518723960855,
+                "mortality_rate": 154.05947519558197,
+                "pop_density_window": [
+                    47.14014979168684,
+                    70.71022468753026
+                ],
+                "mortality_rate_error_margins": [
+                    -31.755609735926583,
+                    339.8745601270905
+                ],
+                "n": 38
+            },
+            {
+                "pop_density": 64.81770596356941,
+                "mortality_rate": 161.82926892653646,
+                "pop_density_window": [
+                    51.854164770855526,
+                    77.78124715628329
+                ],
+                "mortality_rate_error_margins": [
+                    -36.270927248417166,
+                    359.9294651014901
+                ],
+                "n": 35
+            },
+            {
+                "pop_density": 71.29947655992636,
+                "mortality_rate": 164.59800328370628,
+                "pop_density_window": [
+                    57.039581247941086,
+                    85.55937187191162
+                ],
+                "mortality_rate_error_margins": [
+                    -36.12204236996169,
+                    365.3180489373742
+                ],
+                "n": 32
+            },
+            {
+                "pop_density": 78.429424215919,
+                "mortality_rate": 183.9737467657989,
+                "pop_density_window": [
+                    62.7435393727352,
+                    94.1153090591028
+                ],
+                "mortality_rate_error_margins": [
+                    -30.470804208505058,
+                    398.41829774010284
+                ],
+                "n": 33
+            },
+            {
+                "pop_density": 86.27236663751091,
+                "mortality_rate": 174.1396136140702,
+                "pop_density_window": [
+                    69.01789331000873,
+                    103.5268399650131
+                ],
+                "mortality_rate_error_margins": [
+                    -15.887310688610938,
+                    364.1665379167514
+                ],
+                "n": 27
+            },
+            {
+                "pop_density": 94.89960330126202,
+                "mortality_rate": 183.22696593120995,
+                "pop_density_window": [
+                    75.91968264100962,
+                    113.87952396151442
+                ],
+                "mortality_rate_error_margins": [
+                    -11.794444713671822,
+                    378.2483765760917
+                ],
+                "n": 31
+            },
+            {
+                "pop_density": 104.38956363138823,
+                "mortality_rate": 208.10470373132415,
+                "pop_density_window": [
+                    83.51165090511059,
+                    125.26747635766588
+                ],
+                "mortality_rate_error_margins": [
+                    5.484209345728573,
+                    410.7251981169197
+                ],
+                "n": 32
+            },
+            {
+                "pop_density": 114.82851999452706,
+                "mortality_rate": 197.3781350265573,
+                "pop_density_window": [
+                    91.86281599562165,
+                    137.79422399343247
+                ],
+                "mortality_rate_error_margins": [
+                    0.19737523521627054,
+                    394.5588948178983
+                ],
+                "n": 30
+            },
+            {
+                "pop_density": 126.31137199397978,
+                "mortality_rate": 191.1838956552719,
+                "pop_density_window": [
+                    101.04909759518382,
+                    151.57364639277574
+                ],
+                "mortality_rate_error_margins": [
+                    -32.07065360463815,
+                    414.43844491518195
+                ],
+                "n": 42
+            },
+            {
+                "pop_density": 138.94250919337776,
+                "mortality_rate": 179.28296936600378,
+                "pop_density_window": [
+                    111.15400735470222,
+                    166.73101103205332
+                ],
+                "mortality_rate_error_margins": [
+                    -33.68379418961845,
+                    392.249732921626
+                ],
+                "n": 40
+            },
+            {
+                "pop_density": 152.83676011271555,
+                "mortality_rate": 172.67426630568954,
+                "pop_density_window": [
+                    122.26940809017245,
+                    183.40411213525869
+                ],
+                "mortality_rate_error_margins": [
+                    -23.125796477330766,
+                    368.47432908870985
+                ],
+                "n": 38
+            },
+            {
+                "pop_density": 168.12043612398713,
+                "mortality_rate": 160.38160045131886,
+                "pop_density_window": [
+                    134.4963488991897,
+                    201.74452334878458
+                ],
+                "mortality_rate_error_margins": [
+                    -34.89297428066183,
+                    355.6561751832995
+                ],
+                "n": 34
+            },
+            {
+                "pop_density": 184.9324797363859,
+                "mortality_rate": 159.57175629302975,
+                "pop_density_window": [
+                    147.9459837891087,
+                    221.91897568366306
+                ],
+                "mortality_rate_error_margins": [
+                    -8.966970091939515,
+                    328.110482677999
+                ],
+                "n": 31
+            },
+            {
+                "pop_density": 203.4257277100245,
+                "mortality_rate": 182.36282396579853,
+                "pop_density_window": [
+                    162.74058216801959,
+                    244.11087325202936
+                ],
+                "mortality_rate_error_margins": [
+                    7.046022031121822,
+                    357.67962590047523
+                ],
+                "n": 27
+            },
+            {
+                "pop_density": 223.76830048102693,
+                "mortality_rate": 182.49418871392135,
+                "pop_density_window": [
+                    179.01464038482155,
+                    268.52196057723233
+                ],
+                "mortality_rate_error_margins": [
+                    -1.478480590372584,
+                    366.46685801821525
+                ],
+                "n": 23
+            },
+            {
+                "pop_density": 246.14513052912966,
+                "mortality_rate": 170.92824169539165,
+                "pop_density_window": [
+                    196.91610442330372,
+                    295.37415663495557
+                ],
+                "mortality_rate_error_margins": [
+                    -6.54812387991754,
+                    348.4046072707008
+                ],
+                "n": 26
+            },
+            {
+                "pop_density": 270.75964358204266,
+                "mortality_rate": 218.51835488772247,
+                "pop_density_window": [
+                    216.6077148656341,
+                    324.9115722984512
+                ],
+                "mortality_rate_error_margins": [
+                    -295.98268104053,
+                    733.0193908159749
+                ],
+                "n": 26
+            },
+            {
+                "pop_density": 297.8356079402469,
+                "mortality_rate": 222.97964565906153,
+                "pop_density_window": [
+                    238.26848635219753,
+                    357.4027295282963
+                ],
+                "mortality_rate_error_margins": [
+                    -319.8437531684336,
+                    765.8030444865567
+                ],
+                "n": 23
+            },
+            {
+                "pop_density": 327.6191687342716,
+                "mortality_rate": 273.74163037811263,
+                "pop_density_window": [
+                    262.0953349874173,
+                    393.1430024811259
+                ],
+                "mortality_rate_error_margins": [
+                    -277.62518927618885,
+                    825.1084500324141
+                ],
+                "n": 26
+            },
+            {
+                "pop_density": 360.38108560769876,
+                "mortality_rate": 280.1127694320557,
+                "pop_density_window": [
+                    288.304868486159,
+                    432.45730272923856
+                ],
+                "mortality_rate_error_margins": [
+                    -257.70063893000537,
+                    817.9261777941167
+                ],
+                "n": 27
+            },
+            {
+                "pop_density": 396.41919416846866,
+                "mortality_rate": 336.8913752179581,
+                "pop_density_window": [
+                    317.13535533477494,
+                    475.70303300216244
+                ],
+                "mortality_rate_error_margins": [
+                    -324.39535315283473,
+                    998.1781035887509
+                ],
+                "n": 19
+            },
+            {
+                "pop_density": 436.0611135853156,
+                "mortality_rate": 329.9075976524319,
+                "pop_density_window": [
+                    348.84889086825245,
+                    523.2733363023787
+                ],
+                "mortality_rate_error_margins": [
+                    -338.8183268430294,
+                    998.6335221478932
+                ],
+                "n": 19
+            },
+            {
+                "pop_density": 479.6672249438472,
+                "mortality_rate": 275.9775600851643,
+                "pop_density_window": [
+                    383.73377995507775,
+                    575.6006699326166
+                ],
+                "mortality_rate_error_margins": [
+                    -351.6077127618498,
+                    903.5628329321785
+                ],
+                "n": 23
+            },
+            {
+                "pop_density": 527.6339474382319,
+                "mortality_rate": 295.3904945984463,
+                "pop_density_window": [
+                    422.10715795058553,
+                    633.1607369258783
+                ],
+                "mortality_rate_error_margins": [
+                    -332.69152361912455,
+                    923.4725128160171
+                ],
+                "n": 25
+            },
+            {
+                "pop_density": 580.3973421820551,
+                "mortality_rate": 253.5950221293351,
+                "pop_density_window": [
+                    464.31787374564414,
+                    696.4768106184662
+                ],
+                "mortality_rate_error_margins": [
+                    -180.55222297296237,
+                    687.7422672316326
+                ],
+                "n": 27
+            },
+            {
+                "pop_density": 638.4370764002607,
+                "mortality_rate": 251.07006563448726,
+                "pop_density_window": [
+                    510.7496611202086,
+                    766.1244916803129
+                ],
+                "mortality_rate_error_margins": [
+                    -176.14666138220764,
+                    678.2867926511822
+                ],
+                "n": 28
+            },
+            {
+                "pop_density": 702.2807840402869,
+                "mortality_rate": 239.86974385520512,
+                "pop_density_window": [
+                    561.8246272322295,
+                    842.7369408483444
+                ],
+                "mortality_rate_error_margins": [
+                    -177.07336438182148,
+                    656.8128520922317
+                ],
+                "n": 25
+            },
+            {
+                "pop_density": 772.5088624443157,
+                "mortality_rate": 274.78168862184185,
+                "pop_density_window": [
+                    618.0070899554526,
+                    927.0106349331788
+                ],
+                "mortality_rate_error_margins": [
+                    -164.89459237555513,
+                    714.4579696192388
+                ],
+                "n": 23
             }
         ]
     }

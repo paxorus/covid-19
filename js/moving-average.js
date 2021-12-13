@@ -89,12 +89,14 @@ class SlidingWindow {
 	aggregateWindow() {
 		const dataWindow = this.getWindow();
 		const yAverage = dataWindow.average(row => row[this.y]);
+		const yStdDev = dataWindow.popStdDev(yAverage, row => row[this.y]);
 		const xCenter = this.windowCenter();
 
 		return {
 			[this.x]: xCenter,
 			[this.y]: yAverage,
 			[this.x + "_window"]: [this.windowLeft, this.windowRight()],
+			[this.y + "_error_margins"]: [yAverage - 2 * yStdDev, yAverage + 2 * yStdDev],
 			n: dataWindow.length
 		};
 	}

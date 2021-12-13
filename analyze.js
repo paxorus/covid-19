@@ -39,7 +39,7 @@ const mortalityRateAndPopDensityByCounty = populationByCounty
 		delete row.state_code;
 		return row;
 	})
-	.filter(row => row.pop_density <= 6);
+	.filter(row => row.pop_density < 1000);
 
 mortalityRateAndPopDensityByCounty.writeCsv("data/output/mortality-vs-pop-density.csv");
 console.log("Wrote data/output/mortality-vs-pop-density.csv");

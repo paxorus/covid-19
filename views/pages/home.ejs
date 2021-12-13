@@ -12,9 +12,7 @@ const covidMortalityData = <%- JSON.stringify(data) %>
 	// .filter(row => row.x < 50 && row.y < 500);
 	.filter(row => row.y < 1000);
 
-const movingAveragesData = <%- JSON.stringify(movingAverages) %>
-
-// console.log(movingAveragesData);
+const movingAveragesData = <%- JSON.stringify(movingAverages) %>;
 
 const data = {
 	datasets: [{
@@ -38,6 +36,21 @@ const data = {
 		data: movingAveragesData.find(row => row.party === "D").movingAverage
 			// .filter(row => row.pop_density < 50)
 			.map(row => ([row.pop_density, row.mortality_rate])),
+		elements: {
+			point: {
+				radius: 0
+			},
+			line: {
+				borderColor: "rgb(99, 132, 255)",
+				borderWidth: 5
+			}
+		}
+	}, {
+		type: "line",
+		label: "Republican States (lower)",
+		data: movingAveragesData.find(row => row.party === "R").movingAverage
+			// .filter(row => row.pop_density < 50)
+			.map(row => ([row.pop_density, row.mortality_rate_error_margins[0]])),
 		elements: {
 			point: {
 				radius: 0
