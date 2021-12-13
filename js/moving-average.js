@@ -8,50 +8,36 @@ function movingAverage({data, x, y, windowWidth, stepWidth, logarithmic}) {
 		throw new Error("Step width must be less than or equal to window width, otherwise gaps will be left between windows.");
 	}
 
-	const step = logarithmic ? (val => val * (1 + stepWidth)) : (val => val + stepWidth);
-	const windowRight = logarithmic ? (val => val * (1 + windowWidth)) : (val => val + windowWidth);
-	const windowCenter = logarithmic ? (val => val * (1 + windowWidth / 2)) : (val => val + windowWidth / 2);
-
 	data.sort((row1, row2) => row1[x] - row2[x]);
-	const xMin = data[0][x];
-	const xMax = data[data.length - 1][x];
 
-	const slidingWindow = new SlidingWindow(data, x, xMin, windowWidth, step, windowRight);
+	const slidingWindow = new SlidingWindow(data, x, y, windowWidth, stepWidth, logarithmic);
 	const output = [];
 
-	for (let windowLeft = xMin; windowRight(windowLeft) <= xMax; windowLeft = step(windowLeft)) {
-		slidingWindow.slideTo(windowLeft);
-		const dataWindow = slidingWindow.get();
-		const yAverage = dataWindow.average(row => row[y]);
-		const xCenter = windowCenter(windowLeft);
-		output.push({
-			[x]: xCenter,
-			[y]: yAverage,
-			[x + "_window"]: [windowLeft, windowRight(windowLeft)],
-			n: dataWindow.length
-		});
+	while (slidingWindow.hasNext()) {
+		output.push(slidingWindow.next());
 	}
 
 	return output;
 }
 
 class SlidingWindow {
-	constructor(data, x, xMin, width, step, windowRight) {
+	constructor(data, x, y, windowWidth, stepWidth, logarithmic) {
 		this.data = data;
 		this.x = x;
+		this.y = y;
 		this.startIndex = 0;
-		this.width = width;// Width in terms of x-value, not in terms of # of items.
-		this.windowRight = windowRight;
+		this.width = windowWidth;// Width in terms of x-value, not in terms of # of items.
+		this.logarithmic = logarithmic;
+		this.stepWidth = stepWidth;
 
-		this.endIndex = this._linearSearchEnd(step(xMin), 0);
-		// console.log(width);
-		// console.log(this.endIndex);
+		const xMin = data[0][x];
+		this.windowLeft = xMin;
+		this.endIndex = this._linearSearchEnd(this.step(xMin), 0);
 	}
 
-	slideTo(startValue) {
-		// console.log(startValue, startValue * () this.width);
-		this.startIndex = this._linearSearchStart(startValue, this.startIndex);
-		this.endIndex = this._linearSearchEnd(this.windowRight(startValue), this.endIndex);
+	slide() {
+		this.startIndex = this._linearSearchStart(this.windowLeft, this.startIndex);
+		this.endIndex = this._linearSearchEnd(this.windowRight(), this.endIndex);
 	}
 
 	_linearSearchStart(targetValue, startIndex) {
@@ -68,9 +54,49 @@ class SlidingWindow {
 		return i;
 	}
 
-	get() {
-		// console.log(this.startIndex, this.endIndex);
+	getWindow() {
 		return this.data.slice(this.startIndex, this.endIndex);
+	}
+
+	windowRight() {
+		return this.logarithmic ? (this.windowLeft * (1 + this.width)) : (this.windowLeft + this.width);
+	}
+
+	windowCenter() {
+		return this.logarithmic ? (this.windowLeft * (1 + this.width / 2)) : (this.windowLeft + this.width / 2);
+	}
+
+	step(val) {
+		return this.logarithmic ? (val * (1 + this.stepWidth)) : (val + this.stepWidth);
+	}
+
+	next() {
+		this.slide();
+		const result = this.aggregateWindow();
+		this.advance();
+		return result;
+	}
+
+	advance() {
+		this.windowLeft = this.step(this.windowLeft);
+	}
+
+	hasNext() {
+		const xMax = this.data[this.data.length - 1][this.x];
+		return this.windowRight() <= xMax;
+	}
+
+	aggregateWindow() {
+		const dataWindow = this.getWindow();
+		const yAverage = dataWindow.average(row => row[this.y]);
+		const xCenter = this.windowCenter();
+
+		return {
+			[this.x]: xCenter,
+			[this.y]: yAverage,
+			[this.x + "_window"]: [this.windowLeft, this.windowRight()],
+			n: dataWindow.length
+		};
 	}
 }
 
