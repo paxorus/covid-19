@@ -14,7 +14,10 @@ function movingAverage({data, x, y, windowWidth, stepWidth, logarithmic}) {
 	const output = [];
 
 	while (slidingWindow.hasNext()) {
-		output.push(slidingWindow.next());
+		const aggregatedWindowOption = slidingWindow.next();
+		if (aggregatedWindowOption !== null) {
+			output.push(aggregatedWindowOption);
+		}
 	}
 
 	return output;
@@ -92,6 +95,10 @@ class SlidingWindow {
 
 	aggregateWindow() {
 		const dataWindow = this.getWindow();
+
+		if (dataWindow.length === 0) {
+			return null;
+		}
 		// const yAverage = dataWindow.average(row => row[this.y]);
 		// const yStdDev = dataWindow.popStdDev(yAverage, row => row[this.y]);
 		dataWindow.sort((a, b) => a[this.y] - b[this.y]);

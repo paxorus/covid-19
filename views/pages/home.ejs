@@ -54,7 +54,7 @@ const data = {
 				radius: 0
 			},
 			line: {
-				borderColor: "green",
+				borderColor: "red",
 				borderWidth: 5
 			}
 		}
@@ -68,24 +68,24 @@ const data = {
 				radius: 0
 			},
 			line: {
-				borderColor: "black",
+				borderColor: "blue",
 				borderWidth: 5
 			}
 		}
-	}, {
-		type: "line",
-		label: "Swing States (average)",
-		data: movingAveragesData.find(row => row.party === "S").movingAverage
-			.map(row => ([row.pop_density, row.mortality_rate])),
-		elements: {
-			point: {
-				radius: 0
-			},
-			line: {
-				borderColor: "rgb(132, 99, 255)",
-				borderWidth: 5
-			}
-		}
+	// }, {
+	// 	type: "line",
+	// 	label: "Swing States (average)",
+	// 	data: movingAveragesData.find(row => row.party === "S").movingAverage
+	// 		.map(row => ([row.pop_density, row.mortality_rate])),
+	// 	elements: {
+	// 		point: {
+	// 			radius: 0
+	// 		},
+	// 		line: {
+	// 			borderColor: "rgb(132, 99, 255)",
+	// 			borderWidth: 5
+	// 		}
+	// 	}
 	}, {
 		type: "scatter",
 		label: "Republican States",
@@ -96,11 +96,11 @@ const data = {
 		label: "Democratic States",
 		data: covidMortalityData.filter(row => row.party === "D"),
 		backgroundColor: "rgba(99, 132, 255, 0.5)"
-	}, {
-		type: "scatter",
-		label: "Swing States",
-		data: covidMortalityData.filter(row => row.party === "S"),
-		backgroundColor: "rgba(132, 99, 255, 0.5)"
+	// }, {
+	// 	type: "scatter",
+	// 	label: "Swing States",
+	// 	data: covidMortalityData.filter(row => row.party === "S"),
+	// 	backgroundColor: "rgba(132, 99, 255, 0.5)"
 	}]
 };
 
