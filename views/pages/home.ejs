@@ -1,9 +1,13 @@
-<canvas id="myChart"></canvas>
+<canvas id="overall"></canvas>
+<canvas id="delta"></canvas>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.1/dist/chart.min.js" integrity="sha256-GMN9UIJeUeOsn/Uq4xDheGItEeSpI5Hcfp/63GclDZk=" crossorigin="anonymous"></script>
 <script src="/javascripts/covid-charts.js"></script>
 <script>
 	const covidMortalityData = <%- JSON.stringify(data) %>;
 	const movingAveragesData = <%- JSON.stringify(movingAverages) %>;
-	plot(covidMortalityData, movingAveragesData);
+	plotOverall(covidMortalityData, movingAveragesData);
+
+	const movingDeltaData = <%- JSON.stringify(movingDelta) %>;
+	plotDelta(movingDeltaData);
 </script>

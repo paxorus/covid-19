@@ -1,4 +1,4 @@
-function plot(covidMortalityRawData, movingAveragesData) {
+function plotOverall(covidMortalityRawData, movingAveragesData) {
 	const covidMortalityData = covidMortalityRawData
 		.map(row => ({
 			x: row.pop_density,
@@ -16,19 +16,9 @@ function plot(covidMortalityRawData, movingAveragesData) {
 			data: getMovingAverage(movingAveragesData, "R")
 		}),
 		line({
-			label: "Republican States (lower)",
-			color: "red",
-			data: getLowerBound(movingAveragesData, "R")
-		}),
-		line({
 			label: "Democratic States (average)",
 			color: "rgb(99, 132, 255)",
 			data: getMovingAverage(movingAveragesData, "D")
-		}),
-		line({
-			label: "Democratic States (upper)",
-			color: "blue",
-			data: getUpperBound(movingAveragesData, "D")
 		}),
 		line({
 			label: "Swing States (average)",
@@ -53,8 +43,31 @@ function plot(covidMortalityRawData, movingAveragesData) {
 		}
 	];
 
-	const ctx = document.getElementById("myChart").getContext("2d");
+	const ctx = document.getElementById("overall").getContext("2d");
 	const myChart = new Chart(ctx, buildChartConfig(datasets));
+}
+
+function plotDelta(movingDeltaData) {
+	const datasets = [
+		lineWithPoints({
+			label: "Delta",
+			color: "#08F",
+			data: movingDeltaData.map(row => ([row.pop_density, row.mortality_rate]))
+		}),
+		lineWithPoints({
+			label: "Delta (Lower Bound)",
+			color: "#39F8",
+			data: movingDeltaData.map(row => ([row.pop_density, row.mortality_rate_error_margins[0]]))
+		}),
+		lineWithPoints({
+			label: "Delta (Upper Bound)",
+			color: "#69F8",
+			data: movingDeltaData.map(row => ([row.pop_density, row.mortality_rate_error_margins[1]]))
+		})
+	];
+
+	const ctx = document.getElementById("delta").getContext("2d");
+	const myChart = new Chart(ctx, buildDeltaChartConfig(datasets));
 }
 
 function getMovingAverage(movingAveragesData, party) {
@@ -81,6 +94,24 @@ function line({label, color, data}) {
 		elements: {
 			point: {
 				radius: 0
+			},
+			line: {
+				borderColor: color,
+				borderWidth: 5
+			}
+		}
+	};
+}
+
+function lineWithPoints({label, color, data}) {
+	return {
+		type: "line",
+		label,
+		data,
+		elements: {
+			point: {
+				radius: 3,
+				backgroundColor: "#7778"
 			},
 			line: {
 				borderColor: color,
@@ -125,6 +156,48 @@ function buildChartConfig(datasets) {
 							`${context.raw.county} (${context.raw.state}):`,
 							`${Math.round(context.raw.pop_density)} people per sq mi,`,
 							`${Math.round(context.parsed.y)} deaths / 100K`			
+						].join(" ")
+					}
+				}
+			}
+		}
+	};
+}
+
+function buildDeltaChartConfig(datasets) {
+	return {
+		data: {
+			datasets
+		},
+		options: {
+			responsive: true,
+			scales: {
+				x: {
+					title: {
+						display: true,
+						text: "Population Density (people per square mile)"
+					},
+					type: "logarithmic",
+					// type: "linear",
+					position: "bottom"
+				},
+				y: {
+					title: {
+						display: true,
+						text: "Covid-19 Mortality Rate (deaths per 100K)"
+					}
+				}
+			},
+			plugins: {
+				title: {
+					display: true,
+					text: "Covid-19 County Mortality Rate (Republican Vs. Democratic)"
+				},
+				tooltip: {
+					callbacks: {
+						label: (context) => [
+							`${Math.round(context.parsed.x)} people per sq mi,`,
+							`${Math.round(context.parsed.y)} more deaths / 100K`			
 						].join(" ")
 					}
 				}
