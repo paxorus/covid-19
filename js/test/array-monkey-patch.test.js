@@ -39,7 +39,7 @@ describe("Array Monkey Patch module", () => {
 			const actual = [{a: "MA", b: 10}, {a: "WA", b: 50}, {a: "NY", b: 20}]
 				.innerJoin([{a: "MA", c: "Boston"}, {a: "NY", c: "Albany"}, {d: "CA", c: "Sacramento"}], ["a"], ["a"]);
 
-			const expected =  [
+			const expected = [
 				{ a: "MA", b: 10, c: "Boston" },
 				{ a: "NY", b: 20, c: "Albany" }
 			];
@@ -49,15 +49,15 @@ describe("Array Monkey Patch module", () => {
 	});
 
 
-	describe("#average, #popStdDev", () => {
-		it("computes the average and population standard deviation", () => {
+	describe("#average, #sampleStdDev", () => {
+		it("computes the average and sample standard deviation", () => {
 			const data = [2, 4, 4, 4, 5, 5, 7, 9];
 
 			const actualAverage = data.average();
 			assert.equal(actualAverage, 5);
 
-			const actualPopStdDev = data.popStdDev(actualAverage);
-			assert.equal(actualPopStdDev, 2);
+			const actualSampleStdDev = data.sampleStdDev(actualAverage);
+			assert.equal(actualSampleStdDev, Math.sqrt(32 / 7));
 		});
 	});
 });

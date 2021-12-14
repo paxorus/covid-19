@@ -108,8 +108,9 @@ class SlidingWindow {
 		}
 
 		if (this.errorMargins) {
-			const yStdDev = dataWindow.popStdDev(yAverage, row => row[this.y]);
-			const yStdErr = (dataWindow.length > 1) ? yStdDev / Math.sqrt(dataWindow.length - 1) : 0;
+			const yStdDev = dataWindow.sampleStdDev(yAverage, row => row[this.y]);
+			const yStdErr = (dataWindow.length > 1) ? yStdDev / Math.sqrt(dataWindow.length) : 0;
+			dataPoint[this.y + "_std_err"] = yStdErr;
 			dataPoint[this.y + "_error_margins"] = [yAverage - 2 * yStdErr, yAverage + 2 * yStdErr];
 		}
 

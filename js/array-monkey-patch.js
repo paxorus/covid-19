@@ -18,10 +18,11 @@ Array.prototype.average = function (keyFunc) {
 	return this.sum(keyFunc) / this.length;
 };
 
-Array.prototype.popStdDev = function (average, keyFunc) {
+Array.prototype.sampleStdDev = function (average, keyFunc) {
 	keyFunc = keyFunc || identity;
 	const sumOfSquares = this.sum(x => Math.pow(keyFunc(x) - average, 2));
-	return Math.sqrt(sumOfSquares / this.length);
+	console.log(sumOfSquares);
+	return Math.sqrt(sumOfSquares / (this.length - 1));
 };
 
 /**
