@@ -40,8 +40,39 @@ function movingAverage({data, x, y, windowWidth, stepWidth, logarithmic, errorMa
 	return output;
 }
 
-function movingDelta() {
+function movingDelta({data, x, y, windowWidth, stepWidth, logarithmic, errorMargins}) {
+	data.sort((row1, row2) => row1[x] - row2[x]);
 
+	const slidingWindow = new SlidingWindow(data, x, windowWidth, stepWidth, logarithmic);
+	const output = [];
+
+	while (slidingWindow.hasNext()) {
+		const {dataWindow, windowLeft, windowCenter, windowRight} = slidingWindow.next();
+
+		if (dataWindow.length > 0) {
+			const redStates = dataWindow.filter(row => row.party === "R");
+			const redYAverage = redStates.average(row => row[y]);
+			const redYStdErr = redStates.sampleStdErr(redYAverage, row => row[y]);
+
+			const blueStates = dataWindow.filter(row => row.party === "D");
+			const blueYAverage = blueStates.average(row => row[y]);
+			const blueYStdErr = blueStates.sampleStdErr(redYAverage, row => row[y]);
+
+			const yAverage = redYAverage - blueYAverage;
+			const yStdErr = Math.sqrt(Math.pow(redYStdErr, 2) + Math.pow(blueYStdErr, 2));
+
+			output.push({
+				[x]: windowCenter,
+				[x + "_window"]: [windowLeft, windowRight],
+				[y]: yAverage,
+				[y + "_std_err"]: yStdErr,
+				[y + "_error_margins"]: [yAverage - 2 * yStdErr, yAverage + 2 * yStdErr],
+				n: dataWindow.length
+			});
+		}
+	}
+
+	return output;
 }
 
 class SlidingWindow {
@@ -118,5 +149,6 @@ class SlidingWindow {
 }
 
 module.exports = {
-	movingAverage
+	movingAverage,
+	movingDelta
 };

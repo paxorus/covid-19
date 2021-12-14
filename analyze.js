@@ -1,6 +1,6 @@
 require("./js/array-monkey-patch.js");
 const {readCsv} = require("./js/csv-io.js");
-const {movingAverage} = require("./js/moving-average.js");
+const {movingAverage, movingDelta} = require("./js/moving-average.js");
 
 const populationByCounty = readCsv("data/input/Average_Household_Size_and_Population_Density_-_County.csv")
 	.map(({GEOID, NAME, State, B01001_001E, B01001_calc_PopDensity}) => ({
@@ -63,3 +63,15 @@ const countyStatsByParty = mortalityRateAndPopDensityByCounty
 	}))
 	.writeJson("data/output/mortality-vs-pop-density-trendlines.json");
 console.log("Wrote data/output/mortality-vs-pop-density-trendlines.json");
+
+const countyStatsRedVsBlue = movingDelta({
+		data: mortalityRateAndPopDensityByCounty
+			.filter(county => county.party !== "-" && county.party !== "S"),
+		x: "pop_density",
+		y: "mortality_rate",
+		windowWidth: 0.5,
+		stepWidth: 0.1,
+		logarithmic: true
+	})
+	.writeJson("data/output/red-vs-blue-trendlines.json");
+console.log("Wrote data/output/red-vs-blue-trendlines.json");

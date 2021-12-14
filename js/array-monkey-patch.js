@@ -24,6 +24,11 @@ Array.prototype.sampleStdDev = function (average, keyFunc) {
 	return Math.sqrt(sumOfSquares / (this.length - 1));
 };
 
+Array.prototype.sampleStdErr = function (average, keyFunc) {
+	const stdDev = this.sampleStdDev(average, keyFunc);
+	return stdDev / Math.sqrt(this.length);
+};
+
 /**
  * Order of original objects is preserved.
  *

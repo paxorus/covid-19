@@ -15,7 +15,8 @@ app.set("view engine", "ejs");
 app.get("/", function(req, res) {
 	const data = readCsv("data/output/mortality-vs-pop-density.csv");
 	const movingAverages = JSON.parse(Fs.readFileSync("data/output/mortality-vs-pop-density-trendlines.json"));
-	res.render("pages/home", {data, movingAverages});
+	const movingDelta = JSON.parse(Fs.readFileSync("data/output/red-vs-blue-trendlines.json"));
+	res.render("pages/home", {data, movingAverages, movingDelta});
 });
 
 server.listen(app.get("port"), function() {
