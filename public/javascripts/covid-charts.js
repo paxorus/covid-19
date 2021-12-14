@@ -4,10 +4,7 @@ function plotOverall(covidMortalityRawData, movingAveragesData) {
 			x: row.pop_density,
 			y: row.covid_deaths / row.total_pop * 100_000,
 			...row
-		}))
-		// Cut off outliers for a closer view.
-		// .filter(row => row.x < 50 && row.y < 500);
-		.filter(row => row.y < 1000);
+		}));
 
 	const datasets = [
 		line({
@@ -50,19 +47,25 @@ function plotOverall(covidMortalityRawData, movingAveragesData) {
 function plotDelta(movingDeltaData) {
 	const datasets = [
 		lineWithPoints({
+			label: "Delta (Upper Bound)",
+			color: "#39F8",
+			data: movingDeltaData.map(row => ({...row, x: row.pop_density, y: row.mortality_rate_error_margins[1]}))
+		}),
+		lineWithPoints({
 			label: "Delta",
-			color: "#08F",
-			data: movingDeltaData.map(row => ([row.pop_density, row.mortality_rate]))
+			color: "#39F8",
+			data: movingDeltaData.map(row => ({...row, x: row.pop_density, y: row.mortality_rate}))
 		}),
 		lineWithPoints({
 			label: "Delta (Lower Bound)",
-			color: "#39F8",
-			data: movingDeltaData.map(row => ([row.pop_density, row.mortality_rate_error_margins[0]]))
+			color: "#08F",
+			data: movingDeltaData.map(row => ({...row, x: row.pop_density, y: row.mortality_rate_error_margins[0]}))
 		}),
-		lineWithPoints({
-			label: "Delta (Upper Bound)",
-			color: "#69F8",
-			data: movingDeltaData.map(row => ([row.pop_density, row.mortality_rate_error_margins[1]]))
+		line({
+			label: "No difference",
+			color: "red",
+			thickness: 2,
+			data: [[0.1, 0], [10_000, 0]]
 		})
 	];
 
@@ -86,7 +89,7 @@ function getUpperBound(movingAveragesData, party) {
 		.map(row => ([row.pop_density, row.mortality_rate_error_margins[1]]));
 }
 
-function line({label, color, data}) {
+function line({label, color, data, thickness}) {
 	return {
 		type: "line",
 		label,
@@ -97,7 +100,7 @@ function line({label, color, data}) {
 			},
 			line: {
 				borderColor: color,
-				borderWidth: 5
+				borderWidth: thickness || 5
 			}
 		}
 	};
@@ -142,7 +145,9 @@ function buildChartConfig(datasets) {
 					title: {
 						display: true,
 						text: "Covid-19 Mortality Rate (deaths per 100K)"
-					}
+					},
+					// Cut off outliers for a closer view.
+					max: 1000
 				}
 			},
 			plugins: {
@@ -184,20 +189,24 @@ function buildDeltaChartConfig(datasets) {
 				y: {
 					title: {
 						display: true,
-						text: "Covid-19 Mortality Rate (deaths per 100K)"
-					}
+						text: "Difference in Covid-19 Mortality Rates (deaths per 100K)",
+					},
+					// Cut off outliers for a closer view.
+					min: -500,
+					max: 500
 				}
 			},
 			plugins: {
 				title: {
 					display: true,
-					text: "Covid-19 County Mortality Rate (Republican Vs. Democratic)"
+					text: "Difference between Republican and Democratic Covid-19 County Mortality Rates"
 				},
 				tooltip: {
 					callbacks: {
 						label: (context) => [
 							`${Math.round(context.parsed.x)} people per sq mi,`,
-							`${Math.round(context.parsed.y)} more deaths / 100K`			
+							`${Math.round(context.parsed.y)} more deaths / 100K, `,
+							`based on ${Math.round(context.raw.n)} counties`
 						].join(" ")
 					}
 				}
