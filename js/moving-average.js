@@ -14,9 +14,26 @@ function movingAverage({data, x, y, windowWidth, stepWidth, logarithmic, errorMa
 	const output = [];
 
 	while (slidingWindow.hasNext()) {
-		const aggregatedWindowOption = slidingWindow.next();
-		if (aggregatedWindowOption !== null) {
-			output.push(aggregatedWindowOption);
+		const {dataWindow, windowLeft, windowCenter, windowRight} = slidingWindow.next();
+
+		if (dataWindow.length > 0) {
+			const yAverage = dataWindow.average(row => row[y]);
+
+			const dataPoint = {
+				[x]: windowCenter,
+				[x + "_window"]: [windowLeft, windowRight],
+				[y]: yAverage,
+				n: dataWindow.length
+			}
+
+			if (errorMargins) {
+				const yStdDev = dataWindow.sampleStdDev(yAverage, row => row[y]);
+				const yStdErr = (dataWindow.length > 1) ? yStdDev / Math.sqrt(dataWindow.length) : 0;
+				dataPoint[y + "_std_err"] = yStdErr;
+				dataPoint[y + "_error_margins"] = [yAverage - 2 * yStdErr, yAverage + 2 * yStdErr];
+			}
+
+			output.push(dataPoint);
 		}
 	}
 
@@ -76,7 +93,14 @@ class SlidingWindow {
 
 	next() {
 		this.slide();
-		const result = this.aggregateWindow();
+
+		const result = {
+			dataWindow: this.getWindow(),
+			windowLeft: this.windowLeft,
+			windowCenter: this.windowCenter(),
+			windowRight: this.windowRight()
+		};
+
 		this.advance();
 		return result;
 	}
@@ -88,33 +112,6 @@ class SlidingWindow {
 	hasNext() {
 		const xMax = this.data[this.data.length - 1][this.x];
 		return this.windowRight() <= xMax;
-	}
-
-	aggregateWindow() {
-		const dataWindow = this.getWindow();
-
-		if (dataWindow.length === 0) {
-			return null;
-		}
-		const yAverage = dataWindow.average(row => row[this.y]);
-
-		const xCenter = this.windowCenter();
-
-		const dataPoint = {
-			[this.x]: xCenter,
-			[this.x + "_window"]: [this.windowLeft, this.windowRight()],
-			[this.y]: yAverage,
-			n: dataWindow.length
-		}
-
-		if (this.errorMargins) {
-			const yStdDev = dataWindow.sampleStdDev(yAverage, row => row[this.y]);
-			const yStdErr = (dataWindow.length > 1) ? yStdDev / Math.sqrt(dataWindow.length) : 0;
-			dataPoint[this.y + "_std_err"] = yStdErr;
-			dataPoint[this.y + "_error_margins"] = [yAverage - 2 * yStdErr, yAverage + 2 * yStdErr];
-		}
-
-		return dataPoint;
 	}
 }
 
