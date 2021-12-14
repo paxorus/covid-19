@@ -6,10 +6,10 @@
             0.15861723211359902
         ],
         "mortality_rate": -234.5783853767872,
-        "mortality_rate_std_err": null,
+        "mortality_rate_std_err": 0,
         "mortality_rate_error_margins": [
-            null,
-            null
+            -234.5783853767872,
+            -234.5783853767872
         ],
         "n": 2
     },
@@ -20,10 +20,10 @@
             0.17447895532495894
         ],
         "mortality_rate": 191.04952859523866,
-        "mortality_rate_std_err": null,
+        "mortality_rate_std_err": 0,
         "mortality_rate_error_margins": [
-            null,
-            null
+            191.04952859523866,
+            191.04952859523866
         ],
         "n": 2
     },
@@ -104,10 +104,10 @@
             0.3091001125744398
         ],
         "mortality_rate": 655.6714876805281,
-        "mortality_rate_std_err": null,
+        "mortality_rate_std_err": 133.34037087505266,
         "mortality_rate_error_margins": [
-            null,
-            null
+            388.9907459304228,
+            922.3522294306334
         ],
         "n": 9
     },
@@ -118,10 +118,10 @@
             0.3400101238318838
         ],
         "mortality_rate": 490.5454694130073,
-        "mortality_rate_std_err": null,
+        "mortality_rate_std_err": 117.48473282433683,
         "mortality_rate_error_margins": [
-            null,
-            null
+            255.57600376433365,
+            725.514935061681
         ],
         "n": 12
     },
@@ -1378,10 +1378,10 @@
             1806.4814761761436
         ],
         "mortality_rate": -24.192341582646748,
-        "mortality_rate_std_err": null,
+        "mortality_rate_std_err": 48.82419609294053,
         "mortality_rate_error_margins": [
-            null,
-            null
+            -121.84073376852781,
+            73.45605060323432
         ],
         "n": 10
     },
@@ -1406,10 +1406,10 @@
             2185.8425861731344
         ],
         "mortality_rate": -11.633549994631665,
-        "mortality_rate_std_err": null,
+        "mortality_rate_std_err": 44.671328286169945,
         "mortality_rate_error_margins": [
-            null,
-            null
+            -100.97620656697156,
+            77.70910657770823
         ],
         "n": 11
     },
@@ -1420,10 +1420,10 @@
             2404.426844790448
         ],
         "mortality_rate": -42.365816353811056,
-        "mortality_rate_std_err": null,
+        "mortality_rate_std_err": 57.62584586771231,
         "mortality_rate_error_margins": [
-            null,
-            null
+            -157.61750808923568,
+            72.88587538161356
         ],
         "n": 8
     },
@@ -1434,10 +1434,10 @@
             2644.869529269493
         ],
         "mortality_rate": -10.72087780391621,
-        "mortality_rate_std_err": null,
+        "mortality_rate_std_err": 54.50487272710465,
         "mortality_rate_error_margins": [
-            null,
-            null
+            -119.7306232581255,
+            98.28886765029308
         ],
         "n": 8
     },
@@ -1448,10 +1448,10 @@
             2909.3564821964424
         ],
         "mortality_rate": 75.39233141503777,
-        "mortality_rate_std_err": null,
+        "mortality_rate_std_err": 77.9108910264956,
         "mortality_rate_error_margins": [
-            null,
-            null
+            -80.42945063795344,
+            231.21411346802898
         ],
         "n": 6
     },
@@ -1644,7 +1644,7 @@
             11048.276399484235
         ],
         "mortality_rate": null,
-        "mortality_rate_std_err": null,
+        "mortality_rate_std_err": 0,
         "mortality_rate_error_margins": [
             null,
             null
@@ -1658,7 +1658,7 @@
             12153.10403943266
         ],
         "mortality_rate": null,
-        "mortality_rate_std_err": null,
+        "mortality_rate_std_err": 0,
         "mortality_rate_error_margins": [
             null,
             null
@@ -1672,7 +1672,7 @@
             13368.414443375925
         ],
         "mortality_rate": null,
-        "mortality_rate_std_err": null,
+        "mortality_rate_std_err": 0,
         "mortality_rate_error_margins": [
             null,
             null
@@ -1742,7 +1742,7 @@
             21529.96514520137
         ],
         "mortality_rate": null,
-        "mortality_rate_std_err": null,
+        "mortality_rate_std_err": 0,
         "mortality_rate_error_margins": [
             null,
             null

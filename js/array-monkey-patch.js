@@ -21,12 +21,12 @@ Array.prototype.average = function (keyFunc) {
 Array.prototype.sampleStdDev = function (average, keyFunc) {
 	keyFunc = keyFunc || identity;
 	const sumOfSquares = this.sum(x => Math.pow(keyFunc(x) - average, 2));
-	return Math.sqrt(sumOfSquares / (this.length - 1));
+	return (this.length <= 1) ? 0 : Math.sqrt(sumOfSquares / (this.length - 1));
 };
 
 Array.prototype.sampleStdErr = function (average, keyFunc) {
 	const stdDev = this.sampleStdDev(average, keyFunc);
-	return stdDev / Math.sqrt(this.length);
+	return (this.length === 0) ? 0 : stdDev / Math.sqrt(this.length);
 };
 
 /**
