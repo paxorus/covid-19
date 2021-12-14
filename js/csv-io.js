@@ -1,4 +1,4 @@
-const Fs = require('fs');
+const Fs = require("fs");
 
 function zip(A, B) {
 	return A.map((row, idx) => [row, B[idx]]);
@@ -89,7 +89,7 @@ function parseCsLine(line) {
  */
 function readCsv(fileName) {
 	// Trim to remove leading BOM (https://github.com/nodejs/node/issues/20649) and any \r if CSV typed on Windows.
-	const fileLines = Fs.readFileSync(fileName, 'utf8').split("\n");
+	const fileLines = Fs.readFileSync(fileName, "utf8").split("\n");
 	const headers = parseCsLine(fileLines.shift()).map(header => header.trim());
 
 	// Allow trailing newline.

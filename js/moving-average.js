@@ -1,6 +1,6 @@
 require("./array-monkey-patch.js");
 
-function movingAverage({data, x, y, windowWidth, stepWidth, logarithmic}) {
+function movingAverage({data, x, y, windowWidth, stepWidth, logarithmic, errorMargins}) {
 	if (stepWidth <= 0) {
 		throw new Error("Step width must be positive.");
 	}
@@ -10,7 +10,7 @@ function movingAverage({data, x, y, windowWidth, stepWidth, logarithmic}) {
 
 	data.sort((row1, row2) => row1[x] - row2[x]);
 
-	const slidingWindow = new SlidingWindow(data, x, y, windowWidth, stepWidth, logarithmic);
+	const slidingWindow = new SlidingWindow(data, x, y, windowWidth, stepWidth, logarithmic, errorMargins);
 	const output = [];
 
 	while (slidingWindow.hasNext()) {
@@ -23,12 +23,8 @@ function movingAverage({data, x, y, windowWidth, stepWidth, logarithmic}) {
 	return output;
 }
 
-function percentile(list, P) {
-	return list[Math.min(list.length - 1, Math.max(0, Math.round(P / 100 * list.length)))];
-}
-
 class SlidingWindow {
-	constructor(data, x, y, windowWidth, stepWidth, logarithmic) {
+	constructor(data, x, y, windowWidth, stepWidth, logarithmic, errorMargins) {
 		this.data = data;
 		this.x = x;
 		this.y = y;
@@ -36,6 +32,7 @@ class SlidingWindow {
 		this.width = windowWidth;// Width in terms of x-value, not in terms of # of items.
 		this.logarithmic = logarithmic;
 		this.stepWidth = stepWidth;
+		this.errorMargins = errorMargins;
 
 		const xMin = data[0][x];
 		this.windowLeft = xMin;
@@ -100,24 +97,23 @@ class SlidingWindow {
 			return null;
 		}
 		const yAverage = dataWindow.average(row => row[this.y]);
-		const yStdDev = dataWindow.popStdDev(yAverage, row => row[this.y]);
-		const yStdErr = (dataWindow.length > 1) ? yStdDev / Math.sqrt(dataWindow.length - 1) : 0;
-		// dataWindow.sort((a, b) => a[this.y] - b[this.y]);
-		// const yMedian = percentile(dataWindow, 50)[this.y];
-		// const yLower = percentile(dataWindow, 2.5)[this.y];
-		// const yUpper = percentile(dataWindow, 97.5)[this.y];
 
 		const xCenter = this.windowCenter();
 
-		return {
+		const dataPoint = {
 			[this.x]: xCenter,
 			[this.x + "_window"]: [this.windowLeft, this.windowRight()],
 			[this.y]: yAverage,
-			[this.y + "_error_margins"]: [yAverage - 2 * yStdErr, yAverage + 2 * yStdErr],
-			// [this.y]: yMedian,
-			// [this.y + "_error_margins"]: [yLower, yUpper],
 			n: dataWindow.length
-		};
+		}
+
+		if (this.errorMargins) {
+			const yStdDev = dataWindow.popStdDev(yAverage, row => row[this.y]);
+			const yStdErr = (dataWindow.length > 1) ? yStdDev / Math.sqrt(dataWindow.length - 1) : 0;
+			dataPoint[this.y + "_error_margins"] = [yAverage - 2 * yStdErr, yAverage + 2 * yStdErr];
+		}
+
+		return dataPoint;
 	}
 }
 

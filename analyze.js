@@ -48,8 +48,18 @@ const countyStatsByParty = mortalityRateAndPopDensityByCounty
 	.filter(([party, countyStats]) => party !== "-")
 	.map(([party, countyStats]) => ({
 		party,
-		// movingAverage: movingAverage({data: countyStats, x: "pop_density", y: "mortality_rate", windowWidth: 5, stepWidth: 1, logarithmic: false})
-		movingAverage: movingAverage({data: countyStats, x: "pop_density", y: "mortality_rate", windowWidth: 0.5, stepWidth: 0.1, logarithmic: true})
+		movingAverage: movingAverage({
+			data: countyStats,
+			x: "pop_density",
+			y: "mortality_rate",
+			// windowWidth: 5,
+			// stepWidth: 1,
+			// logarithmic: false,
+			windowWidth: 0.5,
+			stepWidth: 0.1,
+			logarithmic: true,
+			errorMargins: false
+		})
 	}))
 	.writeJson("data/output/mortality-vs-pop-density-trendlines.json");
 console.log("Wrote data/output/mortality-vs-pop-density-trendlines.json");
