@@ -27,8 +27,8 @@ function plot(covidMortalityRawData, movingAveragesData) {
 		}),
 		line({
 			label: "Democratic States (upper)",
-			color: "red",
-			data: getLowerBound(movingAveragesData, "R")
+			color: "blue",
+			data: getUpperBound(movingAveragesData, "D")
 		}),
 		line({
 			label: "Swing States (average)",

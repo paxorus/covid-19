@@ -99,22 +99,23 @@ class SlidingWindow {
 		if (dataWindow.length === 0) {
 			return null;
 		}
-		// const yAverage = dataWindow.average(row => row[this.y]);
-		// const yStdDev = dataWindow.popStdDev(yAverage, row => row[this.y]);
-		dataWindow.sort((a, b) => a[this.y] - b[this.y]);
-		const yMedian = percentile(dataWindow, 50)[this.y];
-		const yLower = percentile(dataWindow, 2.5)[this.y];
-		const yUpper = percentile(dataWindow, 97.5)[this.y];
+		const yAverage = dataWindow.average(row => row[this.y]);
+		const yStdDev = dataWindow.popStdDev(yAverage, row => row[this.y]);
+		const yStdErr = (dataWindow.length > 1) ? yStdDev / Math.sqrt(dataWindow.length - 1) : 0;
+		// dataWindow.sort((a, b) => a[this.y] - b[this.y]);
+		// const yMedian = percentile(dataWindow, 50)[this.y];
+		// const yLower = percentile(dataWindow, 2.5)[this.y];
+		// const yUpper = percentile(dataWindow, 97.5)[this.y];
 
 		const xCenter = this.windowCenter();
 
 		return {
 			[this.x]: xCenter,
-			// [this.y]: yAverage,
-			[this.y]: yMedian,
 			[this.x + "_window"]: [this.windowLeft, this.windowRight()],
-			// [this.y + "_error_margins"]: [yAverage - 2 * yStdDev, yAverage + 2 * yStdDev],
-			[this.y + "_error_margins"]: [yLower, yUpper],
+			[this.y]: yAverage,
+			[this.y + "_error_margins"]: [yAverage - 2 * yStdErr, yAverage + 2 * yStdErr],
+			// [this.y]: yMedian,
+			// [this.y + "_error_margins"]: [yLower, yUpper],
 			n: dataWindow.length
 		};
 	}
