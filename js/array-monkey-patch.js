@@ -21,7 +21,6 @@ Array.prototype.average = function (keyFunc) {
 Array.prototype.sampleStdDev = function (average, keyFunc) {
 	keyFunc = keyFunc || identity;
 	const sumOfSquares = this.sum(x => Math.pow(keyFunc(x) - average, 2));
-	console.log(sumOfSquares);
 	return Math.sqrt(sumOfSquares / (this.length - 1));
 };
 

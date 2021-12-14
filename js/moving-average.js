@@ -10,7 +10,7 @@ function movingAverage({data, x, y, windowWidth, stepWidth, logarithmic, errorMa
 
 	data.sort((row1, row2) => row1[x] - row2[x]);
 
-	const slidingWindow = new SlidingWindow(data, x, y, windowWidth, stepWidth, logarithmic, errorMargins);
+	const slidingWindow = new SlidingWindow(data, x, windowWidth, stepWidth, logarithmic);
 	const output = [];
 
 	while (slidingWindow.hasNext()) {
@@ -40,16 +40,18 @@ function movingAverage({data, x, y, windowWidth, stepWidth, logarithmic, errorMa
 	return output;
 }
 
+function movingDelta() {
+
+}
+
 class SlidingWindow {
-	constructor(data, x, y, windowWidth, stepWidth, logarithmic, errorMargins) {
+	constructor(data, x, windowWidth, stepWidth, logarithmic) {
 		this.data = data;
 		this.x = x;
-		this.y = y;
 		this.startIndex = 0;
-		this.width = windowWidth;// Width in terms of x-value, not in terms of # of items.
+		this.windowWidth = windowWidth;// Width in terms of x-value, not in terms of # of items.
 		this.logarithmic = logarithmic;
 		this.stepWidth = stepWidth;
-		this.errorMargins = errorMargins;
 
 		const xMin = data[0][x];
 		this.windowLeft = xMin;
@@ -80,11 +82,11 @@ class SlidingWindow {
 	}
 
 	windowRight() {
-		return this.logarithmic ? (this.windowLeft * (1 + this.width)) : (this.windowLeft + this.width);
+		return this.logarithmic ? (this.windowLeft * (1 + this.windowWidth)) : (this.windowLeft + this.windowWidth);
 	}
 
 	windowCenter() {
-		return this.logarithmic ? (this.windowLeft * (1 + this.width / 2)) : (this.windowLeft + this.width / 2);
+		return this.logarithmic ? (this.windowLeft * (1 + this.windowWidth / 2)) : (this.windowLeft + this.windowWidth / 2);
 	}
 
 	step(val) {
